@@ -1,0 +1,417 @@
+:root {
+	--brand-yellow: #ffbc00;
+	--brand-soft-white: #fffdf4;
+	--brand-green: #a8c686;
+	--brand-dark-green: #1f9725;
+
+	--text-black: #000000;
+	--text-gray: #6c6b6b;
+
+	--radius-lg: 28px;
+	--radius-md: 18px;
+	--radius-sm: 10px;
+}
+
+body {
+	margin: 0;
+	font-family: "Kosugi Maru", sans-serif; /* MAIN BODY FONT */
+	font-weight: 400;
+	background: var(--brand-soft-white);
+	color: var(--text-black);
+}
+
+/* ------------------------------
+   HEADER
+------------------------------ */
+
+.header {
+	padding: 16px 60px;
+}
+
+.header-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	height: 56px;
+}
+
+.nav {
+	background-color: var(--brand-green);
+	padding: 5px 30px;
+	border-radius: 50px;
+}
+
+.nav ul {
+	display: flex;
+	gap: 23px;
+	list-style: none;
+	padding: 0;
+}
+
+.nav ul li {
+	margin: 0 42px;
+}
+
+.nav a {
+	color: var(--brand-soft-white);
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: "Kosugi Maru", sans-serif;
+}
+
+.nav a:hover {
+	color: var(--brand-dark-green);
+}
+
+/* ------------------------------
+   MAIN PRODUCT WRAPPER
+------------------------------ */
+
+.product-wrapper {
+	max-width: 1100px;
+	margin: 40px auto;
+	padding: 40px 32px;
+	border-radius: var(--radius-lg);
+	display: flex;
+	gap: 60px;
+}
+
+/* LEFT SIDE IMAGES */
+
+.product-left {
+	width: 40%;
+}
+
+.product-main-image {
+}
+
+.product-main-image img {
+	width: 200px;
+	padding: 60px 40px;
+	border-radius: var(--radius-md);
+	box-shadow: var(--shadow-soft);
+	border: 8px solid;
+	border-color: var(--brand-yellow);
+	background-color: white;
+}
+
+.product-thumbnails {
+	display: flex;
+	gap: 23px;
+	margin-top: 20px;
+}
+
+.product-thumbnails img {
+	width: 80px;
+	height: 100px;
+	border-radius: var(--radius-md);
+	object-fit: cover;
+	cursor: pointer;
+	border: 2px solid transparent;
+}
+
+.product-thumbnails img:hover {
+	border-color: var(--brand-yellow);
+}
+
+/* ------------------------------
+   RIGHT SIDE INFO
+------------------------------ */
+
+.product-right {
+	width: 60%;
+}
+
+.product-title-jp {
+	font-size: 26px;
+	font-weight: 800;
+	font-family: "Nikumaru", sans-serif; /* TITLE FONT */
+	color: var(--brand-dark-green);
+	margin-bottom: 45px;
+}
+
+.product-title-en {
+	font-size: 22px;
+	margin-top: -8px;
+	color: var(--brand-dark-green);
+	font-weight: 800;
+	font-family: "Nikumaru", sans-serif;
+}
+
+.product-price {
+	margin-top: 12px;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: "Kosugi Maru", sans-serif;
+}
+
+.price-tax {
+	font-size: 15px;
+	color: var(--text-gray);
+}
+
+.product-desc {
+	margin: 16px 0 28px;
+	line-height: 1.6;
+	font-family: "Kosugi Maru", sans-serif;
+	color: var(--text-gray);
+}
+
+/* QUANTITY + CART BUTTON */
+
+/* 全体 */
+.cart-section {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+/* ラベル */
+.qty-label {
+	font-family: "Kosugi Maru", sans-serif;
+	font-weight: 400;
+	margin-bottom: 4px;
+}
+
+/* 数量ボックス */
+.qty-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 110px;
+	padding: 0px 10px;
+	border: 3px solid var(--brand-yellow); /* 太め黄色 */
+	border-radius: 10px;
+	background: white;
+}
+
+/* 数量ボタン */
+.qty-btn {
+	background: none;
+	border: none;
+	font-size: 15px;
+	cursor: pointer;
+	font-family: "Nikumaru", sans-serif;
+	font-weight: 800;
+}
+
+/* 数字 */
+.qty-number {
+	font-size: 16px;
+	font-family: "Kosugi Maru", sans-serif;
+}
+
+/* カートボタン */
+.btn-add-cart {
+	padding: 2px 18px;
+	border-radius: 10px;
+	border: 3px solid var(--brand-yellow);
+	background: white;
+	width: 215px;
+
+	font-family: "Kosugi Maru", sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+
+	cursor: pointer;
+}
+
+.btn-add-cart:hover {
+	background: #fff8d4;
+}
+
+/* SECTIONS (Ingredients, Storage, Allergy) */
+
+.product-section {
+	margin-bottom: 28px;
+}
+
+.product-section h3 {
+	color: var(--brand-dark-green);
+	font-size: 18px;
+	margin-bottom: 6px;
+	font-weight: 800;
+	font-family: "Nikumaru", sans-serif;
+}
+
+.product-section p {
+	line-height: 1.7;
+	color: var(--text-gray);
+	font-family: "Kosugi Maru", sans-serif;
+}
+
+/* BACK BUTTON */
+
+.btn-back-product {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+
+	padding: 10px 20px;
+	border: 3px solid var(--brand-yellow); /* 黄色の太枠 */
+	border-radius: 12px;
+	background: #ffffff;
+
+	font-family: "Kosugi Maru", sans-serif;
+	font-weight: 600;
+	font-size: 15px;
+	color: var(--brand-dark-green); /* 緑 */
+
+	text-decoration: none;
+	cursor: pointer;
+
+	transition: background 0.2s ease;
+}
+
+.btn-back-product:hover {
+	background: #fff8d4;
+}
+
+.back-icon {
+	color: var(--brand-dark-green);
+	font-size: 10px;
+	border: 1px solid var(--brand-dark-green);
+	border-radius: 50%;
+	padding: 3px;
+}
+
+/* -----------------------------------
+   丸く落ちる白いカーブ部分
+----------------------------------- */
+.body-curve {
+	width: 100%;
+	height: 120px;
+
+	background: var(--brand-soft-white);
+
+	border-bottom-left-radius: 90px;
+	border-bottom-right-radius: 90px;
+	position: relative;
+	z-index: 2;
+}
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+/* FOOTER */
+.footer {
+	width: 100%;
+	height: 170px;
+	background: #afcf96;
+	position: relative;
+	z-index: 1;
+	margin-top: -80px;
+	padding: 150px 0 0 0;
+}
+
+.footer-inner {
+	max-width: 1100px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* LEFT BLOCK */
+.footer-logo {
+	height: 70px;
+}
+
+.footer-brand {
+	margin-top: 4px;
+	font-size: 14px;
+}
+
+/* CENTER LINKS */
+.footer-links {
+	list-style: none;
+	display: flex;
+	gap: 60px;
+	padding: 0;
+	margin: 0;
+}
+
+.footer-links a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 14px;
+}
+
+.footer-links a:hover {
+	opacity: 0.8;
+}
+
+/* SNS RIGHT AREA */
+.footer-sns {
+	text-align: right;
+}
+
+.follow-label {
+	display: block;
+	font-size: 14px;
+	margin-bottom: 6px;
+	color: #ffffff;
+}
+
+.sns-icons img {
+	width: 24px;
+	margin-left: 10px;
+	cursor: pointer;
+	color: white;
+}
+
+.sns-icons img:hover {
+	opacity: 0.8;
+}
+
+/* LINE */
+.footer-line {
+	max-width: 990px;
+	margin: 10px auto 20px;
+	height: 1px;
+	background: #6f8b6c;
+	opacity: 0.6;
+}
+
+/* COPYRIGHT */
+.footer-copy {
+	text-align: center;
+	font-size: 13px;
+	margin: 0;
+	color: #333;
+}
+
+/* ------------------------------
+   RESPONSIVE (SMARTPHONE)
+------------------------------ */
+
+@media (max-width: 768px) {
+	.product-wrapper {
+		flex-direction: column;
+		padding: 24px;
+	}
+
+	.product-left,
+	.product-right {
+		width: 100%;
+	}
+
+	.product-thumbnails img {
+		width: 64px;
+		height: 64px;
+	}
+
+	.footer-inner {
+		flex-direction: column;
+		gap: 18px;
+	}
+
+	.nav ul {
+		display: none; /* ← 後でハンバーガーメニュー追加可 */
+	}
+}
