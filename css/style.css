@@ -293,6 +293,16 @@ body {
 	box-sizing: border-box;
 }
 
+/* Title */
+.checkout-title {
+	color: var(--brand-dark-green);
+	font-weight: 800;
+	font-size: 28px;
+	margin-bottom: 40px;
+	text-align: center;
+	font-family: "Nikumaru", sans-serif;
+}
+
 /* -----------------------------------
    FORM INPUTS
 ----------------------------------- */
