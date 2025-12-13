@@ -21,11 +21,51 @@ body {
 }
 
 /* ------------------------------
+   LOADER
+------------------------------ */
+
+.loader {
+	position: fixed;
+	inset: 0;
+	background: #fffdf4; /* brand soft white */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 99999;
+}
+
+.loader-box {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 20px 28px;
+	background: white;
+	border-radius: 18px;
+	border: 2px solid #ffbc00;
+}
+
+.spinner {
+	width: 22px;
+	height: 22px;
+	border: 3px solid #ddd;
+	border-top-color: #1f9725;
+	border-radius: 50%;
+	animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+	to { transform: rotate(360deg); }
+}
+
+
+/* ------------------------------
    HEADER
 ------------------------------ */
 
 .header {
 	padding: 16px 60px;
+	position: sticky;
+	top: 0;
 }
 
 .header-inner {
@@ -107,6 +147,170 @@ body {
 	height: 22px;
 	cursor: pointer;
 }
+
+/* =================================================
+   HOME HERO
+================================================= */
+
+.home-hero {
+	background: var(--brand-yellow);
+	width: 100%;
+}
+
+.home-hero-inner {
+	max-width: 1000px;
+	height: 100vh;
+	margin: 0 auto;
+	position: relative;
+	padding: 40px 20px;
+	box-sizing: border-box;
+}
+
+/* Circle image */
+.hero-photo {
+	position: absolute;
+	top: 80px;
+	left: 40px;
+	width: 260px;
+	height: 260px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.hero-photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Gift box */
+.hero-gift {
+	position: absolute;
+	bottom: 40px;
+	left: 300px;
+	width: 420px;
+}
+
+.hero-gift img {
+	width: 100%;
+}
+
+/* Vertical copy */
+.hero-copy {
+	position: absolute;
+	top: 90px;
+	right: 40px;
+	writing-mode: vertical-rl;
+	font-family: "Nikumaru", sans-serif;
+	font-size: 64px;
+	line-height: 1.7;
+	color: var(--brand-green);
+}
+
+/* Decorations */
+.hero-lemon {
+	position: absolute;
+	width: 60px;
+}
+
+.lemon-1 {
+	top: 40px;
+	right: 220px;
+}
+
+.lemon-2 {
+	bottom: 120px;
+	right: 60px;
+}
+
+.hero-cookie {
+	position: absolute;
+	width: 50px;
+}
+
+.cookie-1 {
+	top: 180px;
+	right: 320px;
+}
+
+/* =================================================
+   HOME MATERIALS
+================================================= */
+
+.home-materials {
+	background: var(--brand-soft-white);
+	padding: 80px 20px;
+	text-align: center;
+}
+
+.materials-title {
+	font-family: "Nikumaru", sans-serif;
+	font-size: 28px;
+	color: var(--brand-green);
+	margin-bottom: 40px;
+}
+
+.materials-grid {
+	max-width: 800px;
+	margin: 0 auto 40px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 24px;
+}
+
+.material-card {
+	background: #ffffff;
+	border-radius: 18px;
+	padding: 24px 16px;
+}
+
+.material-card img {
+	width: 60px;
+	margin-bottom: 12px;
+}
+
+.material-card p {
+	font-size: 14px;
+	line-height: 1.6;
+	color: var(--brand-dark-green);
+	font-family: "Kosugi Maru", sans-serif;
+}
+
+.materials-btn {
+	margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+	.home-hero-inner {
+		height: 550px;
+	}
+
+	.hero-photo {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.hero-gift {
+		left: 50%;
+		transform: translateX(-50%);
+		width: 300px;
+	}
+
+	.hero-copy {
+		writing-mode: horizontal-tb;
+		top: 260px;
+		right: auto;
+		left: 50%;
+		transform: translateX(-50%);
+		text-align: center;
+		font-size: 20px;
+	}
+
+	.materials-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
 
 
 /* ------------------------------
@@ -982,6 +1186,21 @@ body {
 
 	border-bottom-left-radius: 90px;
 	border-bottom-right-radius: 90px;
+	position: relative;
+	z-index: 2;
+}
+
+/* -----------------------------------
+   丸く落ちる白いカーブ部分
+----------------------------------- */
+.inverse-body-curve {
+	width: 100%;
+	height: 120px;
+
+	background: var(--brand-soft-white);
+
+	border-top-left-radius: 90px;
+	border-top-right-radius: 90px;
 	position: relative;
 	z-index: 2;
 }
