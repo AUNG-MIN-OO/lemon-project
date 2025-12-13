@@ -93,7 +93,6 @@ body {
 	width: 200px;
 	padding: 60px 40px;
 	border-radius: var(--radius-md);
-	box-shadow: var(--shadow-soft);
 	border: 8px solid;
 	border-color: var(--brand-yellow);
 	background-color: white;
