@@ -1,11 +1,12 @@
 //checkout selection
 document.querySelectorAll('input[name="payment"]').forEach((radio) => {
-	radio.addEventListener('change', function () {
+	radio.addEventListener("change", function () {
+		const cod = document.getElementById("cod-details");
+		const card = document.getElementById("card-details");
 
-		const cod = document.getElementById('cod-details');
-		const card = document.getElementById('card-details');
-
-		cod.addEventListener("click", ()=>{console.log("hi")})
+		cod.addEventListener("click", () => {
+			console.log("hi");
+		});
 
 		if (this.value === "cod") {
 			cod.style.display = "block";
@@ -41,6 +42,3 @@ document.querySelectorAll('input[name="payment"]').forEach((radio) => {
 // 	// Back to hamburger icon
 // 	hamburger.setAttribute("icon", "mdi:menu");
 // });
-
-
-
