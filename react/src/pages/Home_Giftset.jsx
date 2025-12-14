@@ -1,6 +1,6 @@
 export default function Home_Giftset(){
     return (
-        <section className="home-giftset">
+        <section className="home-giftset" id="home-gift-set">
 
             <h2 className="home-giftset-title">ギフトセット</h2>
 

@@ -50,7 +50,7 @@ body {
 	display: flex;
 	gap: 18px;
 	animation: hideIcons 0.3s ease forwards;
-	animation-delay: 2.2s;
+	animation-delay: 1s;
 }
 
 .jump-icon {
@@ -91,7 +91,7 @@ body {
 	opacity: 0;
 	transform: scale(0.85);
 	animation: showLogo 0.5s ease forwards;
-	animation-delay: 2.3s;
+	animation-delay: 1.5s;
 }
 
 @keyframes showLogo {
@@ -167,7 +167,7 @@ body {
 .header-inner {
 	width: 1334px;              /* ✅ exact from Figma */
 	height: 62px;               /* ✅ exact from Figma */
-	margin: 34px auto 0;        /* ✅ top = 34px */
+	margin: 10px auto 0;        /* ✅ top = 34px */
 	padding: 0 24px;
 
 	display: flex;
@@ -310,7 +310,7 @@ body {
 /* Vertical copy */
 .hero-copy {
 	position: absolute;
-	top: 155px;
+	top: 119px;
 	right: -100px;
 	writing-mode: vertical-rl;
 	font-family: "Nikumaru", sans-serif;
@@ -351,9 +351,9 @@ body {
 }
 
 .lemon-4 {
-	top: 1000px;
-	left: 70px;
-	rotate: 95deg;
+	top: 856px;
+	left: 320px;
+	rotate: 111deg;
 }
 
 .lemon-5 {
@@ -374,9 +374,9 @@ body {
 }
 
 .lemon-8 {
-	top: 1000px;
-	right: 145px;
-	rotate: -155deg;
+	top: 830px;
+	right: 48px;
+	rotate: -182deg;
 }
 
 .hero-cookie {
@@ -439,7 +439,7 @@ body {
 .materials-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 40px 50px;
+	gap: 40px 20px;
 	justify-items: center;
 	grid-auto-flow: dense;
 }
@@ -782,9 +782,9 @@ body {
 .home-giftset-lemon2{
 	position: absolute;
 	width: 100px;
-	top: -7px;
-	left: 256px;
-	rotate: 145deg;
+	bottom: 130px;
+	left: 161px;
+	rotate: 350deg;
 }
 
 /* ===============================
@@ -972,8 +972,8 @@ body {
 
 .product-wrapper {
 	max-width: 1100px;
-	margin: 40px auto;
-	padding: 40px 32px;
+	margin: 0 auto;
+	padding: 120px 40px 32px;
 	border-radius: var(--radius-lg);
 	display: flex;
 	gap: 60px;
@@ -1181,11 +1181,16 @@ body {
 /* -----------------------------------
    OUTER CONTAINER (BIG BOX)
 ----------------------------------- */
-.outer-box {
+
+.checkout{
 	max-width: 700px;
-	margin: 40px auto;
-	padding: 45px 40px;
+	margin: 0 auto;
+	padding-top: 120px;
 	background: var(--brand-soft-white);
+}
+
+.outer-box {
+	padding: 60px 40px;
 	border: 3px solid var(--text-gray);
 	border-radius: 45px;
 	box-sizing: border-box;
@@ -1463,6 +1468,10 @@ body {
 	color: var(--brand-dark-green);
 }
 
+.receipt{
+	padding-top: 120px;
+}
+
 /* Divider */
 .divider {
 	margin: 20px 0;
@@ -1515,11 +1524,10 @@ body {
 
 /*=============================== Start Contact CSS ==================================*/
 
-/* Centered container */
-.access-container {
+.access-section {
 	max-width: 1100px;   /* same as screenshot */
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 120px 20px;
 }
 
 /* Title */
@@ -1623,16 +1631,16 @@ body {
 
 /* Outer Box */
 .voice-box {
-	background: #fffdf4;               /* soft cream */
-	border: 10px solid #ffdc7b;         /* soft yellow border */
-	border-radius: 28px;               /* rounded corners */
-	padding: 50px;
-	max-width: 600px;                 /* centered width */
-	margin: 60px auto;                 /* space around */
+	background: #fffdf4;
+	padding:120px 0;
+	max-width: 600px;
+	margin: 0 auto;
 }
 
 /* Inner layout (image + text) */
 .voice-wrapper {
+	border: 10px solid #ffdc7b;
+	border-radius: 28px;
 	display: flex;
 	align-items: center;
 	gap: 50px;

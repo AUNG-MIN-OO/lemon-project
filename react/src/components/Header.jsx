@@ -6,15 +6,17 @@ export default function Header() {
     return (
         <header className="header">
             <div className="header-inner">
-                <img src="../images/Logo.svg" alt="焼き菓子3&1" className="logo"/>
+                <Link to="/">
+                    <img src="/images/Logo.svg" alt="焼き菓子3&1" className="logo"/>
+                </Link>
 
                 <nav className="nav">
                     <ul>
-                        <li><a href="#">3&1とは</a></li>
-                        <li><a href="#">商品のご案内</a></li>
-                        <li><a href="#">ギフトセット</a></li>
-                        <li><a href="#">お客様の声</a></li>
-                        <li><a href="#">アクセス</a></li>
+                        <li><Link to="#">3&1とは</Link></li>
+                        <li><Link to="/#lineup">商品のご案内</Link></li>
+                        <li><Link to="/#home-gift-set">ギフトセット</Link></li>
+                        <li><Link to="/review">お客様の声</Link></li>
+                        <li><Link to="/access">アクセス</Link></li>
                     </ul>
                 </nav>
 
