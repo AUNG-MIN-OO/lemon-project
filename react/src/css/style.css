@@ -20,86 +20,194 @@ body {
 	color: var(--text-black);
 }
 
-/* ------------------------------
+/* =================================================
+   GLOBAL CONTAINER
+================================================= */
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+/* ==============================
    LOADER
------------------------------- */
+============================== */
 
 .loader {
 	position: fixed;
 	inset: 0;
-	background: #fffdf4; /* brand soft white */
+	background: #fffdf4;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	z-index: 99999;
 }
 
-.loader-box {
+/* -------- Jump icons -------- */
+
+.jump-group {
 	display: flex;
-	align-items: center;
-	gap: 12px;
-	padding: 20px 28px;
-	background: white;
-	border-radius: 18px;
-	border: 2px solid #ffbc00;
+	gap: 18px;
+	animation: hideIcons 0.3s ease forwards;
+	animation-delay: 2.2s;
 }
 
-.spinner {
-	width: 22px;
-	height: 22px;
-	border: 3px solid #ddd;
-	border-top-color: #1f9725;
-	border-radius: 50%;
-	animation: spin 0.8s linear infinite;
+.jump-icon {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	animation: jump 0.9s ease-in-out infinite;
 }
 
-@keyframes spin {
-	to { transform: rotate(360deg); }
+/* stagger */
+.jump-icon:nth-child(1) { animation-delay: 0s; }
+.jump-icon:nth-child(2) { animation-delay: 0.15s; }
+.jump-icon:nth-child(3) { animation-delay: 0.3s; }
+.jump-icon:nth-child(4) { animation-delay: 0.45s; }
+
+@keyframes jump {
+	0%, 100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-14px);
+	}
 }
 
+@keyframes hideIcons {
+	to {
+		opacity: 0;
+		transform: scale(0.85);
+		pointer-events: none;
+	}
+}
+
+/* -------- Logo -------- */
+
+.loader-logo {
+	position: absolute;
+	width: 240px;
+	opacity: 0;
+	transform: scale(0.85);
+	animation: showLogo 0.5s ease forwards;
+	animation-delay: 2.3s;
+}
+
+@keyframes showLogo {
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+/* ==============================
+   TABLET
+============================== */
+@media (max-width: 1024px) {
+	.jump-group {
+		gap: 14px;
+	}
+
+	.jump-icon {
+		width: 24px;
+		height: 24px;
+	}
+
+	@keyframes jump {
+		50% {
+			transform: translateY(-12px);
+		}
+	}
+
+	.loader-logo {
+		width: 100px;
+	}
+}
+
+/* ==============================
+   MOBILE
+============================== */
+@media (max-width: 480px) {
+	.jump-group {
+		gap: 10px;
+	}
+
+	.jump-icon {
+		width: 20px;
+		height: 20px;
+	}
+
+	@keyframes jump {
+		50% {
+			transform: translateY(-10px);
+		}
+	}
+
+	.loader-logo {
+		width: 86px;
+	}
+}
 
 /* ------------------------------
    HEADER
 ------------------------------ */
 
 .header {
-	padding: 16px 60px;
-	position: sticky;
-	top: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 1000;
+
+	/* yellow background from hero */
+	background: transparent;
+	pointer-events: none; /* only inner is clickable */
 }
 
+/* This is the actual nav bar row */
 .header-inner {
+	width: 1334px;              /* ✅ exact from Figma */
+	height: 62px;               /* ✅ exact from Figma */
+	margin: 34px auto 0;        /* ✅ top = 34px */
+	padding: 0 24px;
+
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
+	background: transparent;
+	box-sizing: border-box;
+	pointer-events: auto;
 }
 
+/* Logo */
 .logo {
 	height: 56px;
 }
 
+/* Nav pill */
 .nav {
 	background-color: var(--brand-green);
-	padding: 5px 30px;
+	padding: 6px 36px;
 	border-radius: 50px;
+	width: 850px;
+	height: 45px;
 }
 
 .nav ul {
 	display: flex;
-	gap: 23px;
+	justify-content: space-between;
+	align-items: center;
 	list-style: none;
-	padding: 0;
 }
 
 .nav ul li {
-	margin: 0 42px;
+	margin: 0;
 }
 
 .nav a {
 	color: var(--brand-soft-white);
 	text-decoration: none;
 	font-size: 14px;
-	font-weight: 400;
 	font-family: "Kosugi Maru", sans-serif;
 }
 
@@ -107,15 +215,11 @@ body {
 	color: var(--brand-dark-green);
 }
 
+/* Right icons */
 .header-icons {
 	display: flex;
 	align-items: center;
 	gap: 16px;
-}
-
-.cart-icon-wrap {
-	position: relative;
-	display: inline-block;
 }
 
 .shopping-bag-icon {
@@ -124,28 +228,31 @@ body {
 	cursor: pointer;
 }
 
-/* RED CIRCLE BADGE */
+.insta-icon {
+	width: 22px;
+	height: 22px;
+	cursor: pointer;
+}
+
+/* Cart badge */
+.cart-icon-wrap {
+	position: relative;
+}
+
 .cart-badge {
 	position: absolute;
 	top: -6px;
 	right: -8px;
 	background: #ff3b3b;
-	color: white;
+	color: #fff;
 	font-size: 12px;
 	font-weight: bold;
 	min-width: 18px;
 	height: 18px;
-	padding: 0 5px;
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-.insta-icon {
-	width: 22px;
-	height: 22px;
-	cursor: pointer;
 }
 
 /* =================================================
@@ -159,22 +266,21 @@ body {
 
 .home-hero-inner {
 	max-width: 1000px;
-	height: 100vh;
 	margin: 0 auto;
 	position: relative;
 	padding: 40px 20px;
 	box-sizing: border-box;
+	height: 85vh;
 }
 
 /* Circle image */
 .hero-photo {
 	position: absolute;
-	top: 80px;
-	left: 40px;
-	width: 260px;
-	height: 260px;
+	top: 245px;
+	left: -106px;
+	width: 450px;
+	height: 345px;
 	border-radius: 50%;
-	overflow: hidden;
 }
 
 .hero-photo img {
@@ -192,126 +298,673 @@ body {
 }
 
 .hero-gift img {
-	width: 100%;
+	width: 775px;
+	margin-top: 88px;
+	top: 205px;
+	left: -195px;
+	rotate: -6deg;
+	position: relative;
+	z-index: 1000;
 }
 
 /* Vertical copy */
 .hero-copy {
 	position: absolute;
-	top: 90px;
-	right: 40px;
+	top: 155px;
+	right: -100px;
 	writing-mode: vertical-rl;
 	font-family: "Nikumaru", sans-serif;
 	font-size: 64px;
-	line-height: 1.7;
-	color: var(--brand-green);
+	line-height: 0.7;
+	color: var(--brand-dark-green);
 }
 
 /* Decorations */
 .hero-lemon {
 	position: absolute;
-	width: 60px;
+	width: 290px;
+	z-index: 1000;
+	bottom: -65px;
+	right: -203px;
+}
+
+.lemon{
+	position: absolute;
+	width: 100px;
+	z-index: 1000;
 }
 
 .lemon-1 {
-	top: 40px;
-	right: 220px;
+	top: 250px;
+	left: -100px;
 }
 
 .lemon-2 {
-	bottom: 120px;
-	right: 60px;
+	top: 580px;
+	left: 0;
+}
+
+.lemon-3 {
+	top: 875px;
+	left: -50px;
+	rotate: 95deg;
+}
+
+.lemon-4 {
+	top: 1000px;
+	left: 70px;
+	rotate: 95deg;
+}
+
+.lemon-5 {
+	top: 155px;
+	right: 480px;
+	rotate: 95deg;
+}
+
+.lemon-6 {
+	top: 195px;
+	right: -175px;
+	rotate: -155deg;
+}
+
+.lemon-7 {
+	top: 390px;
+	right: 145px;
+}
+
+.lemon-8 {
+	top: 1000px;
+	right: 145px;
+	rotate: -155deg;
 }
 
 .hero-cookie {
 	position: absolute;
-	width: 50px;
+	width: 100px;
 }
 
 .cookie-1 {
-	top: 180px;
-	right: 320px;
+	top: 424px;
+	left: -166px;
+}
+
+.cookie-2 {
+	top: 285px;
+	left: 290px;
+}
+
+.cookie-3 {
+	top: 360px;
+	right: -80px;
+}
+
+.cookie-4 {
+	top: 535px;
+	right: 105px;
 }
 
 /* =================================================
    HOME MATERIALS
 ================================================= */
 
-.home-materials {
-	background: var(--brand-soft-white);
-	padding: 80px 20px;
-	text-align: center;
+.materials {
+	background: #fffdf4;
+	padding: 120px 0 40px 0;
+	position: relative;
+	overflow: hidden;
 }
 
+.materials-inner {
+	max-width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* Vertical title */
 .materials-title {
+	position: absolute;
+	left: -60px;
+	top: 50%;
+	transform: translateY(-50%);
+	writing-mode: vertical-rl;
+
 	font-family: "Nikumaru", sans-serif;
-	font-size: 28px;
-	color: var(--brand-green);
-	margin-bottom: 40px;
+	font-size: 42px;
+	color: #1f9725;
+	letter-spacing: 6px;
 }
 
+/* Grid */
 .materials-grid {
-	max-width: 800px;
-	margin: 0 auto 40px;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 24px;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px 50px;
+	justify-items: center;
+	grid-auto-flow: dense;
 }
 
+/* Bottom row centering */
+.material-card:nth-child(4) {
+	grid-column: 1 / 3;
+	grid-row: 2;
+}
+
+.material-card:nth-child(5) {
+	grid-column: 2 / 4;
+	grid-row: 2;
+}
+
+/* PNG cards */
 .material-card {
-	background: #ffffff;
-	border-radius: 18px;
-	padding: 24px 16px;
+	width: 240px;     /* match Figma export size */
+	height: auto;
+	display: block;
 }
 
-.material-card img {
-	width: 60px;
-	margin-bottom: 12px;
-}
-
-.material-card p {
-	font-size: 14px;
-	line-height: 1.6;
-	color: var(--brand-dark-green);
-	font-family: "Kosugi Maru", sans-serif;
-}
-
+/* Button */
 .materials-btn {
-	margin-top: 20px;
+	display: block;
+	width: 180px;
+	margin: 80px auto 0;
+	padding: 14px 0;
+
+	text-align: center;
+	border: 3px solid #ffbc00;
+	border-radius: 12px;
+	color: #1f9725;
+	font-family: "Kosugi Maru", sans-serif;
+	font-weight: 600;
+	text-decoration: none;
+	background: #fffdf4;
+}
+
+.materials-btn:hover {
+	background: #fff3cc;
+}
+
+.material-hero-lemon{
+	position: absolute;
+	width: 400px;
+	z-index: 1000;
+	bottom: 0;
+	right: -220px;
+}
+
+.material-deco-lemon-1{
+	position: absolute;
+	width: 100px;
+	z-index: 1000;
+	bottom: 290px;
+	right: -25px;
+	rotate: -89deg;
+}
+
+.material-deco-lemon-2{
+	position: absolute;
+	width: 100px;
+	z-index: 1000;
+	bottom: 30px;
 }
 
 @media (max-width: 768px) {
-	.home-hero-inner {
-		height: 550px;
-	}
-
-	.hero-photo {
-		left: 50%;
-		transform: translateX(-50%);
-	}
-
-	.hero-gift {
-		left: 50%;
-		transform: translateX(-50%);
-		width: 300px;
-	}
-
-	.hero-copy {
+	.materials-title {
+		position: static;
 		writing-mode: horizontal-tb;
-		top: 260px;
-		right: auto;
-		left: 50%;
-		transform: translateX(-50%);
+		transform: none;
 		text-align: center;
-		font-size: 20px;
+		margin-bottom: 40px;
 	}
 
 	.materials-grid {
 		grid-template-columns: 1fr 1fr;
 	}
+
+	.materials-grid .material-card:nth-child(4),
+	.materials-grid .material-card:nth-child(5) {
+		grid-column: auto;
+	}
 }
 
+@media (max-width: 480px) {
+	.materials-grid {
+		grid-template-columns: 1fr;
+		gap: 30px;
+	}
 
+	.material-card {
+		width: 220px;
+	}
+}
+
+/* ===============================
+   LINEUP
+=============================== */
+
+.lineup {
+	background: #fffdf4;
+	padding: 20px 0;
+}
+
+.lineup-title {
+	font-size: 24px;
+	text-align: center;
+	font-weight: bolder;
+	color: var(--brand-dark-green);
+}
+
+/* Viewport */
+.lineup-viewport {
+	overflow: hidden;
+	width: 100%;
+}
+
+/* Track */
+.lineup-track {
+	display: flex;
+	gap: 40px;
+	transition: transform 0.4s ease;
+	padding: 70px 65px;
+}
+
+/* Card */
+.lineup-card {
+	width: 320px;
+	flex-shrink: 0;
+	background: #fff;
+	padding: 30px 20px;
+	text-align: center;
+	border-radius: 50px;
+	box-shadow:  23px 23px 46px #bebebe,
+	-23px -23px 46px #ffffff;
+}
+
+.lineup-card-img{
+	height: 140px;
+}
+
+.lineup-card img {
+	width: 120px;
+	margin-bottom: 16px;
+}
+
+.lineup-card .jp {
+	margin: 20px 0;
+	font-weight: 800;
+	color: var(--brand-dark-green);
+	font-family: "Nikumaru", sans-serif;
+}
+
+.lineup-card .en {
+	margin: 20px 0;
+	font-size: 12px;
+	color: #1f9725;
+}
+
+.price {
+	margin: 10px 0 14px;
+	font-weight: bold;
+}
+
+.lineup-divider{
+	width: 250px;
+	background-color: var(--text-gray);
+	margin: 30px auto;
+}
+
+.lineup-card-info{
+	height: 80px;
+}
+
+.lineup-card .description{
+	color: var(--text-gray);
+	line-height: 2;
+}
+
+.buy-btn {
+	border: 3px solid #ffbc00;
+	background: white;
+	border-radius: 12px;
+	padding: 8px 22px;
+	margin-top: 20px;
+	color: var(--brand-dark-green);
+	font-weight: bold;
+}
+
+/* ===============================
+   PAGINATION (EXACT STYLE)
+=============================== */
+
+.lineup-pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+}
+
+.lineup-pagination button {
+	cursor: pointer;
+}
+
+/* Thin line */
+.scroll-line {
+	width: 300px;
+	height: 2px;
+	background: #cfcfcf;
+	position: relative;
+}
+
+.scroll-thumb {
+	position: absolute;
+	top: -2px;
+	width: 30px;
+	height: 6px;
+	background: #666;
+	border-radius: 3px;
+	transform: translateX(-50%);
+	transition: left 0.4s ease;
+}
+
+/* =================================================
+   HOME – GIFT SET
+================================================= */
+
+.home-giftset {
+	background: #C5D6D9;
+	padding: 0 0 100px;
+	position: relative;
+	overflow: hidden;
+	border-top-left-radius: 90px;
+	border-top-right-radius: 90px;
+}
+
+.home-giftset-title {
+	text-align: center;
+	font-family: "Nikumaru", sans-serif;
+	font-size: 28px;
+	color: var(--brand-dark-green);
+	margin-bottom: 40px;
+}
+
+/* INNER */
+.home-giftset-inner {
+	max-width: 1000px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 60px;
+	align-items: center;
+}
+
+/* LEFT PHOTO */
+.home-giftset-photo {
+	border-radius: 28px;
+	overflow: hidden;
+}
+
+.home-giftset-photo img {
+	width: 100%;
+	display: block;
+}
+
+/* RIGHT CIRCLE */
+.home-giftset-circle .home-giftset-box{
+	width: 516px;
+	position: absolute;
+	z-index: 1000;
+	top: 44px;
+	left: 628px;
+}
+
+.home-giftset-circle .home-giftset-box-inside{
+	width: 200px;
+	position: absolute;
+	z-index: 1001;
+	top: 380px;
+	left: 1031px;
+}
+
+.home-giftset-box {
+	width: 220px;
+	margin-top: 40px;
+}
+
+.home-giftset-copy {
+	margin-top: 10px;
+	font-family: "Nikumaru", sans-serif;
+	color: var(--brand-dark-green);
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+.home-giftset-price {
+	margin-top: 10px;
+	font-family: "Nikumaru", sans-serif;
+	color: var(--brand-dark-green);
+	font-size: 22px;
+}
+
+/* BUTTON */
+.home-giftset-btn {
+	display: block;
+	margin: 40px auto 0;
+	padding: 14px 0;
+	text-align: center;
+}
+
+.home-giftset-btn img{
+	width: 240px;
+}
+
+/* DECORATIONS */
+.home-giftset-lemon-top {
+	position: absolute;
+	width: 400px;
+	top: 0;
+	right: 0;
+}
+
+.home-giftset-lemon-bottom{
+	position: absolute;
+	width: 400px;
+	bottom: 0;
+	right: 0;
+}
+
+.home-giftset-lemon1{
+	position: absolute;
+	width: 100px;
+	top: 35px;
+	left: 35px;
+	rotate: 106deg;
+}
+
+.home-giftset-lemon2{
+	position: absolute;
+	width: 100px;
+	top: -7px;
+	left: 256px;
+	rotate: 145deg;
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+
+@media (max-width: 768px) {
+	.home-giftset-inner {
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
+
+	.home-giftset-circle {
+		width: 320px;
+		height: 320px;
+	}
+}
+
+/* ===============================
+   HOME GIFTSET SCHEDULE
+================================ */
+
+.home-giftset-schedule {
+	background: #fffdf4;
+	padding: 80px 20px;
+}
+
+.schedule-title {
+	text-align: center;
+	font-family: "Nikumaru", sans-serif;
+	font-size: 28px;
+	color: #1f9725;
+	margin-bottom: 40px;
+}
+
+.schedule-box {
+	max-width: 1100px;
+	margin: 0 auto;
+	background: #ffffff;
+	border-radius: 28px;
+	padding: 40px 20px;
+}
+
+/* SCROLL AREA (PC + MOBILE) */
+.schedule-scroll {
+	overflow-x: scroll; /* force scrollbar */
+	overflow-y: hidden;
+	cursor: grab;
+	padding-bottom: 16px;
+}
+
+/* Scrollbar styling */
+.schedule-scroll::-webkit-scrollbar {
+	height: 12px;
+}
+
+.schedule-scroll::-webkit-scrollbar-track {
+	background: #e5e5e5;
+	border-radius: 6px;
+}
+
+.schedule-scroll::-webkit-scrollbar-thumb {
+	background: #1f9725;
+	border-radius: 6px;
+}
+
+/* Firefox */
+.schedule-scroll {
+	scrollbar-width: auto;
+	scrollbar-color: #1f9725 #e5e5e5;
+}
+
+/* TIMELINE */
+.schedule-timeline {
+	position: relative;
+	min-width: 1400px; /* force PC scrolling */
+	padding-left: 120px;
+}
+
+/* YEAR */
+.schedule-year {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	font-family: "Kosugi Maru", sans-serif;
+	font-size: 14px;
+}
+
+/* DASHED LINE */
+.schedule-line {
+	position: absolute;
+	top: 50%;
+	left: 120px;
+	right: 40px;
+	border-top: 2px dashed #999;
+}
+
+/* ITEMS */
+.schedule-items {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 40px;
+}
+
+/* EACH ITEM */
+.schedule-item {
+	width: 160px;
+	text-align: center;
+}
+
+/* DATE (TOP) */
+.schedule-date {
+	font-size: 14px;
+	margin-bottom: 8px;
+}
+
+/* PARCEL (ON LINE) */
+.schedule-parcel {
+	width: 80px;
+	position: relative;
+	z-index: 2;
+}
+
+/* DAY (BOTTOM) */
+.schedule-day {
+	font-size: 13px;
+	margin-top: 6px;
+}
+
+/* ===============================
+   HOME RANKING
+================================ */
+
+.home-ranking {
+	background: #fffdf4;
+	padding: 0 20px 120px;
+	position: relative;
+}
+
+.ranking-title {
+	text-align: center;
+	font-family: "Nikumaru", sans-serif;
+	font-size: 32px;
+	color: #1f9725;
+	margin-bottom: 300px;
+}
+
+/* CARD WRAPPER */
+.ranking-cards {
+	max-width: 1100px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 40px;
+}
+
+/* CARD BASE */
+.ranking-card {
+	width: 320px;
+	text-align: center;
+	position: relative;
+}
+
+/* STAGGERED HEIGHTS */
+.rank-1 { margin-top: 0; }
+.rank-2 { margin-top: 60px; }
+.rank-3 { margin-top: 120px; }
+
+/* CROWN */
+.rank-crown {
+	position: absolute;
+	top: -260px;
+	left: -36px;
+	width: 320px;
+	z-index: 3;
+}
 
 /* ------------------------------
    MAIN PRODUCT WRAPPER
@@ -1195,7 +1848,7 @@ body {
 ----------------------------------- */
 .inverse-body-curve {
 	width: 100%;
-	height: 120px;
+	height: 110px;
 
 	background: var(--brand-soft-white);
 
@@ -1204,6 +1857,42 @@ body {
 	position: relative;
 	z-index: 2;
 }
+
+/* -----------------------------------
+   scroll top btn
+----------------------------------- */
+
+.scroll-top-btn {
+	position: fixed;
+	right: 32px;
+	bottom: 32px;
+
+	width: 56px;
+	height: 56px;
+
+	border-radius: 50%;
+	border: 3px solid var(--brand-yellow);
+	background: #fffdf4;
+
+	color: var(--brand-yellow);
+	font-size: 24px;
+	font-weight: bold;
+
+	cursor: pointer;
+	z-index: 2000;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	transition: all 0.25s ease;
+}
+
+.scroll-top-btn:hover {
+	background: var(--brand-green);
+	color: #ffffff;
+}
+
 
 /* ------------------------------
    FOOTER
@@ -1326,3 +2015,47 @@ body {
 		display: none; /* ← 後でハンバーガーメニュー追加可 */
 	}
 }
+
+/* ===============================
+   FLOATING EFFECT (ADD-ON CLASS)
+================================ */
+
+/* attach this class to any lemon */
+.float-lemon {
+	animation: floatLemon 6s ease-in-out infinite;
+}
+
+/* optional variations for natural feel */
+.float-slow {
+	animation-duration: 8s;
+}
+
+.float-fast {
+	animation-duration: 4.5s;
+}
+
+.float-delay-1 {
+	animation-delay: 0.6s;
+}
+
+.float-delay-2 {
+	animation-delay: 1.2s;
+}
+
+.float-delay-3 {
+	animation-delay: 1.8s;
+}
+
+/* floating animation */
+@keyframes floatLemon {
+	0% {
+		transform: translateY(0) rotate(0deg);
+	}
+	50% {
+		transform: translateY(-30px) rotate(10deg);
+	}
+	100% {
+		transform: translateY(0) rotate(0deg);
+	}
+}
+

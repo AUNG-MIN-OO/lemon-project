@@ -15,7 +15,7 @@ export default function App() {
         // simulate app boot time (fonts, images, state)
         const timer = setTimeout(() => {
             setLoading(false);
-        }, 600); // adjust if needed
+        }, 2000); // adjust if needed
 
         return () => clearTimeout(timer);
     }, []);
