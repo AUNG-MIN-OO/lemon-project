@@ -1,146 +1,146 @@
 {
-  "florentin": {
-    "id": "florentin",
-    "type": "product",
-    "name": "フロランタン",
-    "nameEn": "FLORENTIN",
-    "price": 320,
-    "taxIncluded": true,
-    "images": {
-      "main": "/images/FLORENTIN_big.png",
-      "thumbnails": [
-        "/images/FLORENTIN_small_1.png",
-        "/images/FLORENTIN_small_2.png"
-      ]
-    },
-    "description": "キャラメルナッツとサクサクのクッキー生地で焼き上げました。",
-    "ingredients": "小麦粉（北海道産）、バター（北海道産）、生クリーム、アーモンドスライス、きび砂糖、卵（愛知県）、水あめ、粉糖、ゲランドの塩／バニラ香料（一部に小麦・卵・乳成分・アーモンドを含む）",
-    "storage": "高温多湿を避け、直射日光を避けてください。",
-    "allergy": "本製品には、小麦・卵・乳製品・アーモンドを含みます。"
-  },
+	"florentin": {
+		"id": "florentin",
+		"type": "product",
+		"name": "フロランタン",
+		"nameEn": "FLORENTIN",
+		"price": 320,
+		"taxIncluded": false,
+		"images": {
+			"main": "/images/FLORENTIN_big.png",
+			"thumbnails": [
+				"/images/FLORENTIN_small_1.png",
+				"/images/FLORENTIN_small_2.png"
+			]
+		},
+		"description": "キャラメルナッツとサクサクのクッキー生地で焼き上げました。",
+		"ingredients": "小麦粉（北海道産）、バター（北海道産）、生クリーム、アーモンドスライス、きび砂糖、卵（愛知県）、水あめ、粉糖、ゲランドの塩／バニラ香料（一部に小麦・卵・乳成分・アーモンドを含む）",
+		"storage": "高温多湿を避け、直射日光を避けてください。",
+		"allergy": "本製品には、小麦・卵・乳製品・アーモンドを含みます。"
+	},
 
-  "beurre_de_neige_ichigo": {
-    "id": "beurre_de_neige_ichigo",
-    "type": "product",
-    "name": "ブールドネージュ（いちご）",
-    "nameEn": "BEURRE DE NEIGE (STRAWBERRY)",
-    "price": 250,
-    "taxIncluded": true,
-    "images": {
-      "main": "/images/ichigo_beurre.png",
-      "thumbnails": []
-    },
-    "description": "キャラメルのフレーバーがあり、粉糖をまぶしたコロンとまるいクッキーです。",
-    "ingredients": "小麦粉（国内製造）、バター（国内製造）、きび砂糖、アーモンドパウダー、バニラビーンズ／バニラエッセンス（一部に小麦・卵・乳成分・アーモンドを含む）",
-    "storage": "高温多湿を避け、直射日光を避けてください。",
-    "allergy": "本製品には、小麦・卵・乳成分・アーモンドを含みます。"
-  },
+	"beurre_de_neige_ichigo": {
+		"id": "beurre_de_neige_ichigo",
+		"type": "product",
+		"name": "ブールドネージュ（いちご）",
+		"nameEn": "BEURRE DE NEIGE (STRAWBERRY)",
+		"price": 250,
+		"taxIncluded": true,
+		"images": {
+			"main": "/images/ichigo_beurre.png",
+			"thumbnails": []
+		},
+		"description": "キャラメルのフレーバーがあり、粉糖をまぶしたコロンとまるいクッキーです。",
+		"ingredients": "小麦粉（国内製造）、バター（国内製造）、きび砂糖、アーモンドパウダー、バニラビーンズ／バニラエッセンス（一部に小麦・卵・乳成分・アーモンドを含む）",
+		"storage": "高温多湿を避け、直射日光を避けてください。",
+		"allergy": "本製品には、小麦・卵・乳成分・アーモンドを含みます。"
+	},
 
-  "beurre_de_neige_vanilla": {
-    "id": "beurre_de_neige_vanilla",
-    "type": "product",
-    "name": "ブールドネージュ（バニラ）",
-    "nameEn": "BEURRE DE NEIGE (VANILLA)",
-    "price": 250,
-    "taxIncluded": true,
-    "images": {
-      "main": "/images/vanila_beurre.png",
-      "thumbnails": []
-    },
-    "description": "バニラのフレーバーがあり、粉糖をまぶしたコロンとまるいクッキーです。",
-    "ingredients": "小麦粉（国内製造）、バター（国内製造）、きび砂糖、アーモンドパウダー、バニラビーンズ／バニラエッセンス（一部に小麦・卵・乳成分・アーモンドを含む）",
-    "storage": "高温多湿を避け、直射日光を避けてください。",
-    "allergy": "本製品には、小麦・卵・乳成分・アーモンドを含みます。"
-  },
+	"beurre_de_neige_vanilla": {
+		"id": "beurre_de_neige_vanilla",
+		"type": "product",
+		"name": "ブールドネージュ（バニラ）",
+		"nameEn": "BEURRE DE NEIGE (VANILLA)",
+		"price": 250,
+		"taxIncluded": true,
+		"images": {
+			"main": "/images/vanila_beurre.png",
+			"thumbnails": []
+		},
+		"description": "バニラのフレーバーがあり、粉糖をまぶしたコロンとまるいクッキーです。",
+		"ingredients": "小麦粉（国内製造）、バター（国内製造）、きび砂糖、アーモンドパウダー、バニラビーンズ／バニラエッセンス（一部に小麦・卵・乳成分・アーモンドを含む）",
+		"storage": "高温多湿を避け、直射日光を避けてください。",
+		"allergy": "本製品には、小麦・卵・乳成分・アーモンドを含みます。"
+	},
 
-  "lemon_cookie": {
-    "id": "lemon_cookie",
-    "type": "product",
-    "name": "レモンガレット",
-    "nameEn": "LEMON COOKIE",
-    "price": 320,
-    "taxIncluded": true,
-    "images": {
-      "main": "/images/lemon_cookie.png",
-      "thumbnails": [
-        "/images/lemon_cookie_small.png",
-        "/images/lemon_cookie_small2.png"
-      ]
-    },
-    "description": "爽やかなレモンの酸味と思わず写真を撮りたくなるかわいい見た目が魅力のクッキーです。",
-    "ingredients": "小麦粉（国内製造）、バター（北海道産）、きび砂糖、粉糖、レモンパウダー、レモン（愛知県産）、ピスタチオ（一部に小麦・卵・乳成分・アーモンドを含む）",
-    "storage": "高温多湿を避け、直射日光を避けてください。",
-    "allergy": "本製品には、小麦・卵・乳成分・アーモンドを含みます。"
-  },
+	"lemon_cookie": {
+		"id": "lemon_cookie",
+		"type": "product",
+		"name": "レモンガレット",
+		"nameEn": "LEMON COOKIE",
+		"price": 320,
+		"taxIncluded": true,
+		"images": {
+			"main": "/images/lemon_cookie.png",
+			"thumbnails": [
+				"/images/lemon_cookie_small.png",
+				"/images/lemon_cookie_small2.png"
+			]
+		},
+		"description": "爽やかなレモンの酸味と思わず写真を撮りたくなるかわいい見た目が魅力のクッキーです。",
+		"ingredients": "小麦粉（国内製造）、バター（北海道産）、きび砂糖、粉糖、レモンパウダー、レモン（愛知県産）、ピスタチオ（一部に小麦・卵・乳成分・アーモンドを含む）",
+		"storage": "高温多湿を避け、直射日光を避けてください。",
+		"allergy": "本製品には、小麦・卵・乳成分・アーモンドを含みます。"
+	},
 
-  "original_setouchi_lemon_cake": {
-    "id": "original_setouchi_lemon_cake",
-    "type": "product",
-    "name": "無農薬瀬戸内レモンケーキ",
-    "nameEn": "ORIGINAL SETOUCHI LEMON CAKE",
-    "price": 330,
-    "taxIncluded": true,
-    "images": {
-      "main": "/images/original_lemonCake.png",
-      "thumbnails": [
-        "/images/setouchi_small1.png",
-        "/images/setouchi_small2.png"
-      ]
-    },
-    "description": "瀬戸内の大三島の無農薬レモンをたっぷり使ったケーキです。",
-    "ingredients": "小麦粉（国内製造）、バター（国内製造）、卵（愛知県）、粉糖、きび砂糖、レモン（愛知県産）、ピスタチオ、ベーキングパウダー（一部に小麦・卵・乳成分・アーモンドを含む）",
-    "storage": "高温多湿を避け、直射日光を避けてください。",
-    "allergy": "本製品には、小麦・卵・乳成分・アーモンドを含みます。"
-  },
+	"original_setouchi_lemon_cake": {
+		"id": "original_setouchi_lemon_cake",
+		"type": "product",
+		"name": "無農薬瀬戸内レモンケーキ",
+		"nameEn": "ORIGINAL SETOUCHI LEMON CAKE",
+		"price": 330,
+		"taxIncluded": true,
+		"images": {
+			"main": "/images/original_lemonCake.png",
+			"thumbnails": [
+				"/images/setouchi_small1.png",
+				"/images/setouchi_small2.png"
+			]
+		},
+		"description": "瀬戸内の大三島の無農薬レモンをたっぷり使ったケーキです。",
+		"ingredients": "小麦粉（国内製造）、バター（国内製造）、卵（愛知県）、粉糖、きび砂糖、レモン（愛知県産）、ピスタチオ、ベーキングパウダー（一部に小麦・卵・乳成分・アーモンドを含む）",
+		"storage": "高温多湿を避け、直射日光を避けてください。",
+		"allergy": "本製品には、小麦・卵・乳成分・アーモンドを含みます。"
+	},
 
-  "white_chocolate_lemon_cake": {
-    "id": "white_chocolate_lemon_cake",
-    "type": "product",
-    "name": "ホワイトチョコレモンケーキ",
-    "nameEn": "WHITE CHOCOLATE LEMON CAKE",
-    "price": 320,
-    "taxIncluded": true,
-    "images": {
-      "main": "/images/W_choco_lemon.png",
-      "thumbnails": [
-        "/images/white_chocolemon_small.png",
-        "/images/white_chocolemon_small2.png"
-      ]
-    },
-    "description": "瀬戸内レモンピールを練り込んだ、レモン型のレモンケーキにホワイトチョコをトッピングしました。",
-    "ingredients": "小麦粉（国内製造）、バター（北海道産）、きび砂糖、粉糖、レモンパウダー、レモン（愛知県産）、ピスタチオ（一部に小麦・卵・乳成分・アーモンドを含む）",
-    "storage": "高温多湿を避け、直射日光を避けてください。",
-    "allergy": "本製品には、小麦・卵・乳成分・アーモンドを含みます。"
-  },
+	"white_chocolate_lemon_cake": {
+		"id": "white_chocolate_lemon_cake",
+		"type": "product",
+		"name": "ホワイトチョコレモンケーキ",
+		"nameEn": "WHITE CHOCOLATE LEMON CAKE",
+		"price": 320,
+		"taxIncluded": true,
+		"images": {
+			"main": "/images/W_choco_lemon.png",
+			"thumbnails": [
+				"/images/white_chocolemon_small.png",
+				"/images/white_chocolemon_small2.png"
+			]
+		},
+		"description": "瀬戸内レモンピールを練り込んだ、レモン型のレモンケーキにホワイトチョコをトッピングしました。",
+		"ingredients": "小麦粉（国内製造）、バター（北海道産）、きび砂糖、粉糖、レモンパウダー、レモン（愛知県産）、ピスタチオ（一部に小麦・卵・乳成分・アーモンドを含む）",
+		"storage": "高温多湿を避け、直射日光を避けてください。",
+		"allergy": "本製品には、小麦・卵・乳成分・アーモンドを含みます。"
+	},
 
-  "gift_box_standard": {
-    "id": "gift_box_standard",
-    "type": "gift",
-    "name": "ギフトセット",
-    "nameEn": "GIFT SET",
-    "price": 3300,
-    "taxIncluded": true,
+	"gift_box_standard": {
+		"id": "gift_box_standard",
+		"type": "gift",
+		"name": "ギフトセット",
+		"nameEn": "GIFT SET",
+		"price": 3300,
+		"taxIncluded": true,
 
-    "images": {
-      "main": "/images/gift-box.png",
-      "center": "/images/center-gift-box.png"
-    },
+		"images": {
+			"main": "/images/gift-box.png",
+			"center": "/images/center-gift-box.png"
+		},
 
-    "contents": [
-      { "productId": "original_setouchi_lemon_cake" },
-      { "productId": "florentin" },
-      { "productId": "white_chocolate_lemon_cake" },
-      { "productId": "beurre_de_neige_vanilla" },
-      { "productId": "beurre_de_neige_ichigo" },
-      { "productId": "lemon_cookie" }
-    ],
+		"contents": [
+			{ "productId": "original_setouchi_lemon_cake" },
+			{ "productId": "florentin" },
+			{ "productId": "white_chocolate_lemon_cake" },
+			{ "productId": "beurre_de_neige_vanilla" },
+			{ "productId": "beurre_de_neige_ichigo" },
+			{ "productId": "lemon_cookie" }
+		],
 
-    "arrows": [
-      "/images/arrow-1.svg",
-      "/images/arrow-2.svg",
-      "/images/arrow-3.svg",
-      "/images/arrow-4.svg",
-      "/images/arrow-5.svg"
-    ]
-  }
+		"arrows": [
+			"/images/arrow-1.svg",
+			"/images/arrow-2.svg",
+			"/images/arrow-3.svg",
+			"/images/arrow-4.svg",
+			"/images/arrow-5.svg"
+		]
+	}
 }
