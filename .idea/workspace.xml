@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c04adf57-5a43-42ce-809c-b7e9f9bbc5d3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/react/public/images/home-giftset-buy-btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/public/images/home-giftset-family-photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/public/images/home-giftset-inside-photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/public/images/home-giftset-lemon-bottom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/public/images/home-giftset-lemon-top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/public/images/home-giftset-photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/public/images/home-giftset-schedule-parcel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/public/images/icons8-left-arrow-64.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/public/images/icons8-right-arrow-64.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/public/images/left-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/public/images/lemon_deco.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/public/images/material-hero-lemon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/public/images/rank2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/public/images/rank3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/public/images/right-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/public/images/scroll-top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/src/components/ScrollToTopButton.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/src/pages/Home_Giftset.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/src/pages/Home_Giftset_Schedule.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/src/pages/Home_Lineup.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/src/pages/Home_Ranking.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/進級制作.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/about3&amp;1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beurre_de_ichigo/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beurre_de_vinilla/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout_credit/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery_detail/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/florentin/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/giftbox_detail/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/1_lemon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/BEURRE_DE_NEIGE.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/FLORENTIN_big.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/FLORENTIN_small_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/FLORENTIN_small_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/FLORENTIN_small_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/IMG_7617.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/IMG_7620.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Shopping_Cart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Untitled-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/W_choco_lemon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/arrow-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/arrow-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/arrow-3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/arrow-4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/arrow-5.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/butter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/butter_product.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/cake1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/cake2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/center-gift-box.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/choco_beurre.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/cookie1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/cookie2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/cookie3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/cookie4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/eat_together.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/eat_together2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/egg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/egg_product.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/eggs.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/florentin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/flour.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/flour_product.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/gift box.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/gift-box-small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/gift-box.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/gift_box_text.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/giftbox1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/giftbox2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/giftset.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/gmail-outline.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/gmail.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ichigo_beurre.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/insta.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/instagram-outline.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/lemon-cake-giftbox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/lemon-cake.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/lemon.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/lemon_cookie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/lemon_cookie_small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/lemon_cookie_small2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/lemon_product.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/lemonicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/lemons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/lemons2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/making_cookie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/map.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/organic setochi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/original_lemonCake.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/rank1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/setochi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/setouchi_small1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/setouchi_small2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/sugar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/sugar_product.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tabler_shopping-bag.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/vanila_beurre.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/white_chocolemon_small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/white_chocolemon_small2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/woman.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/焼き菓子3＆１logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon_cookie/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/public/images/rank1.png" beforeDir="false" afterPath="$PROJECT_DIR$/react/public/images/rank1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/react/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/src/components/Loader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/react/src/components/Loader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/react/src/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/react/src/pages/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/receipt/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/review/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setouchi_lemon_cake/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopping_cart/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/top_page/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/white_choco_lemon_cake/index.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="36osFlxitDmh87ems6kJNWy7Rcq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/aungm/Desktop/Projects/lemon-project/react/public/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\aungm\Desktop\Projects\lemon-project\react\public\images" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-c7e53b3be11b-JavaScript-PS-253.28294.345" />
+        <option value="bundled-php-predefined-a98d8de5180a-09080813851e-com.jetbrains.php.sharedIndexes-PS-253.28294.345" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c04adf57-5a43-42ce-809c-b7e9f9bbc5d3" name="Changes" comment="" />
+      <created>1765684158004</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1765684158004</updated>
+      <workItem from="1765684159379" duration="209000" />
+      <workItem from="1765684382664" duration="65000" />
+      <workItem from="1765684457055" duration="24137000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
