@@ -40,14 +40,6 @@ export default function Home() {
 
 					{/* Decorative lemons */}
 					<img
-						src="/images/small-lemon-for-home.svg"
-						className="hero-lemon lemon-1"
-					/>
-					<img
-						src="/images/deco-lemon-right-home.png"
-						className="hero-lemon lemon-2"
-					/>
-					<img
 						src="/images/deco-lemon-right-home.png"
 						className="hero-lemon"
 					/>
@@ -100,10 +92,10 @@ export default function Home() {
 						className="hero-cookie cookie-4"
 					/>
 				</div>
+
 				<div className="inverse-body-curve"></div>
 			</section>
 
-			<Curve_Body />
 			<section className="materials">
 				<div className="materials-inner">
 					<h2 className="materials-title">素材のこだわり</h2>

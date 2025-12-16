@@ -348,8 +348,8 @@ body {
 }
 
 .lemon-2 {
-	top: 600px;
-	left: -240px;
+	top: 580px;
+	left: 0;
 }
 
 .lemon-3 {
@@ -1695,7 +1695,7 @@ body {
 .voice-box {
 	background: #fffdf4;
 	padding: 120px 0;
-	max-width: 1000px;
+	max-width: 600px;
 	margin: 0 auto;
 }
 
@@ -1717,7 +1717,7 @@ body {
 /* Right text */
 .voice-text {
 	flex: 1;
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 2;
 	color: #444;
 	font-weight: bolder;
