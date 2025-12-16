@@ -3,10 +3,8 @@
 	--brand-soft-white: #fffdf4;
 	--brand-green: #a8c686;
 	--brand-dark-green: #1f9725;
-
 	--text-black: #000000;
 	--text-gray: #6c6b6b;
-
 	--radius-lg: 28px;
 	--radius-md: 18px;
 	--radius-sm: 10px;
@@ -14,8 +12,6 @@
 
 body {
 	margin: 0;
-	font-family: "Kosugi Maru", sans-serif; /* MAIN BODY FONT */
-	font-weight: 400;
 	background: var(--brand-soft-white);
 	color: var(--text-black);
 }
@@ -134,115 +130,62 @@ body {
 	}
 }
 
-/* ==============================
-   MOBILE
-============================== */
-@media (max-width: 480px) {
-	.jump-group {
-		gap: 10px;
-	}
-
-	.jump-icon {
-		width: 20px;
-		height: 20px;
-	}
-
-	@keyframes jump {
-		50% {
-			transform: translateY(-10px);
-		}
-	}
-
-	.loader-logo {
-		width: 86px;
-	}
-}
-
-/* ------------------------------
-   HEADER
------------------------------- */
+/* ==================================================
+   HEADER — MOBILE FIRST (0–767px)
+================================================== */
 
 .header {
-	position: absolute;
+	position: fixed;
+	top: 0;
+	left: 0;
 	width: 100%;
 	z-index: 1000;
-	/* yellow background from hero */
-	background: transparent;
-	pointer-events: none;
+	background: var(--brand-yellow);
 }
 
-/* nav bar row */
 .header-inner {
-	width: 1334px;
-	height: 62px;
-	margin: 10px auto 0;
-	padding: 0 24px;
-
+	width: 100%;
+	min-height: 56px;
+	padding: 4px 8px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-
-	background: transparent;
 	box-sizing: border-box;
-	pointer-events: auto;
 }
 
 /* Logo */
 .logo {
-	height: 56px;
+	height: 38px;
 }
 
-/* Nav pill */
+/* ==================================================
+   NAV — MOBILE HIDDEN
+================================================== */
+
 .nav {
-	background-color: var(--brand-green);
-	padding: 6px 36px;
-	border-radius: 50px;
-	width: 850px;
-	height: 45px;
+	display: none;
 }
 
-.nav ul {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	list-style: none;
-}
+/* ==================================================
+   ICONS
+================================================== */
 
-.nav ul li {
-	margin: 0;
-}
-
-.nav a {
-	color: var(--brand-soft-white);
-	text-decoration: none;
-	font-size: 16px;
-	font-family: "Kosugi Maru", sans-serif;
-}
-
-.nav a:hover {
-	color: var(--brand-dark-green);
-}
-
-/* Right icons */
 .header-icons {
 	display: flex;
 	align-items: center;
-	gap: 16px;
+	gap: 14px;
 }
 
 .shopping-bag-icon {
-	width: 26px;
-	height: 26px;
+	width: 24px;
 	cursor: pointer;
 }
 
 .insta-icon {
-	width: 22px;
-	height: 22px;
+	width: 20px;
 	cursor: pointer;
 }
 
-/* Cart badge */
 .cart-icon-wrap {
 	position: relative;
 }
@@ -253,14 +196,151 @@ body {
 	right: -8px;
 	background: #ff3b3b;
 	color: #fff;
-	font-size: 16px;
-	font-weight: bold;
+	font-size: 12px;
 	min-width: 18px;
 	height: 18px;
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+/* ==================================================
+   HAMBURGER — MOBILE VISIBLE
+================================================== */
+
+.hamburger {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 29px;
+	height: 13px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	z-index: 1100;
+}
+
+.hamburger span {
+	display: block;
+	height: 3px;
+	background: #333;
+	border-radius: 2px;
+	transition: 0.3s;
+}
+
+.hamburger.open span:nth-child(1) {
+	transform: rotate(45deg) translateY(7px);
+}
+
+.hamburger.open span:nth-child(2) {
+	opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+	transform: rotate(-45deg) translateY(-7px);
+}
+
+/* ==================================================
+   MOBILE MENU
+================================================== */
+
+.mobile-overlay {
+	position: fixed;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.4);
+	z-index: 999;
+}
+
+.mobile-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	padding: 80px 0 24px;
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 24px;
+
+	transform: translateY(-100%);
+	transition: 0.4s ease;
+	z-index: 1000;
+}
+
+.mobile-menu.open {
+	transform: translateY(0);
+}
+
+.mobile-menu a {
+	width: 150px;
+	font-size: 18px;
+	color: var(--brand-soft-white);
+	text-decoration: none;
+	border: 1px solid var(--brand-green);
+	border-radius: 30px;
+	padding: 10px 20px;
+	text-align: center;
+	background-color: var(--brand-green);
+}
+
+/* ==================================================
+   DESKTOP ONLY (≥768px)
+================================================== */
+
+@media screen and (min-width: 768px) {
+	.header {
+		position: absolute;
+		background: transparent;
+	}
+
+	.header-inner {
+		max-width: 1334px;
+		height: 62px;
+		margin: 10px auto 0;
+		padding: 0 24px;
+	}
+
+	.logo {
+		height: 56px;
+	}
+
+	/* NAV — DESKTOP ONLY */
+	.nav {
+		display: block;
+		background-color: var(--brand-green);
+		padding: 20px 36px;
+		border-radius: 50px;
+		width: 850px;
+	}
+
+	.nav ul {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.nav a {
+		color: var(--brand-soft-white);
+		text-decoration: none;
+		font-size: 16px;
+		font-family: "Kosugi Maru", sans-serif;
+	}
+
+	.nav a:hover {
+		color: var(--brand-dark-green);
+	}
+
+	/* Hide hamburger on desktop */
+	.hamburger {
+		display: none;
+	}
 }
 
 /* =================================================
@@ -321,7 +401,8 @@ body {
 	top: 119px;
 	right: -100px;
 	writing-mode: vertical-rl;
-	font-family: "Nikumaru", sans-serif;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: 700;
 	font-size: 63px;
 	line-height: 0.7;
 	color: var(--brand-dark-green);
@@ -412,6 +493,132 @@ body {
 	right: 105px;
 }
 
+@media (max-width: 768px) {
+	.home-hero {
+		background: var(--brand-yellow);
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.home-hero-inner {
+		position: relative;
+		padding: 40px 20px;
+		box-sizing: border-box;
+		height: 75vh;
+	}
+
+	/* Circle image */
+	.hero-photo {
+		top: 25px;
+		left: -9px;
+		width: 285px;
+	}
+
+	.hero-photo img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	/* Gift box */
+	.hero-gift {
+		bottom: 140px;
+		left: 267px;
+	}
+
+	.hero-gift img {
+		width: 260px;
+	}
+
+	/* Vertical copy */
+	.hero-copy {
+		top: 119px;
+		right: 15px;
+		font-size: 26px;
+		line-height: 0.4;
+	}
+
+	/* Decorations */
+	.hero-lemon {
+		width: 110px;
+		bottom: -65px;
+		right: 0;
+	}
+
+	.lemon {
+		width: 50px;
+	}
+
+	.lemon-1 {
+		top: 250px;
+		left: -100px;
+	}
+
+	.lemon-2 {
+		top: 580px;
+		left: 0;
+	}
+
+	.lemon-3 {
+		top: 875px;
+		left: -50px;
+		rotate: 95deg;
+	}
+
+	.lemon-4 {
+		top: 856px;
+		left: 320px;
+		rotate: 111deg;
+	}
+
+	.lemon-5 {
+		top: 155px;
+		right: 480px;
+		rotate: 95deg;
+	}
+
+	.lemon-6 {
+		top: 195px;
+		right: -175px;
+		rotate: -155deg;
+	}
+
+	.lemon-7 {
+		top: 390px;
+		right: 145px;
+	}
+
+	.lemon-8 {
+		top: 830px;
+		right: 48px;
+		rotate: -182deg;
+	}
+
+	.hero-cookie {
+		width: 55px;
+	}
+
+	.cookie-1 {
+		top: 424px;
+		left: -166px;
+	}
+
+	.cookie-2 {
+		top: 285px;
+		left: 290px;
+	}
+
+	.cookie-3 {
+		top: 360px;
+		right: -80px;
+	}
+
+	.cookie-4 {
+		top: 535px;
+		right: 105px;
+	}
+}
+
 /* =================================================
    HOME MATERIALS
 ================================================= */
@@ -436,8 +643,8 @@ body {
 	top: 50%;
 	transform: translateY(-50%);
 	writing-mode: vertical-rl;
-
-	font-family: "Nikumaru", sans-serif;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: 700;
 	font-size: 36px;
 	color: #1f9725;
 	letter-spacing: 6px;
@@ -480,9 +687,9 @@ body {
 	border: 3px solid #ffbc00;
 	border-radius: 12px;
 	color: #1f9725;
-	font-family: "Kosugi Maru", sans-serif;
+	font-family: "Yomogi", cursive;
+	font-weight: bold;
 	font-size: 16px;
-	font-weight: 600;
 	text-decoration: none;
 	background: #fffdf4;
 }
@@ -516,32 +723,93 @@ body {
 }
 
 @media (max-width: 768px) {
+	.materials {
+		padding: 40px 0 20px 0;
+	}
+
+	/* Vertical title */
 	.materials-title {
-		position: static;
-		writing-mode: horizontal-tb;
-		transform: none;
-		text-align: center;
-		margin-bottom: 40px;
+		position: absolute;
+		left: -60px;
+		top: 50%;
+		transform: translateY(-50%);
+		writing-mode: vertical-rl;
+		font-family: "Yomogi", cursive;
+		font-size: 26px;
+		color: #1f9725;
+		letter-spacing: 6px;
 	}
 
+	/* Grid */
 	.materials-grid {
-		grid-template-columns: 1fr 1fr;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px 10px;
+		justify-items: center;
+		grid-auto-flow: dense;
 	}
 
-	.materials-grid .material-card:nth-child(4),
-	.materials-grid .material-card:nth-child(5) {
-		grid-column: auto;
-	}
-}
-
-@media (max-width: 480px) {
-	.materials-grid {
-		grid-template-columns: 1fr;
-		gap: 30px;
+	/* Bottom row centering */
+	.material-card:nth-child(4) {
+		grid-column: 1 / 3;
+		grid-row: 2;
 	}
 
+	.material-card:nth-child(5) {
+		grid-column: 2 / 4;
+		grid-row: 2;
+	}
+
+	/* PNG cards */
 	.material-card {
-		width: 220px;
+		width: 90px;
+		height: auto;
+		display: block;
+	}
+
+	/* Button */
+	.materials-btn {
+		display: block;
+		width: 180px;
+		margin: 80px auto 0;
+		padding: 14px 0;
+		text-align: center;
+		border: 3px solid #ffbc00;
+		border-radius: 12px;
+		color: #1f9725;
+		font-family: "Yomogi", cursive;
+		font-weight: bold;
+		font-size: 16px;
+		text-decoration: none;
+		background: #fffdf4;
+	}
+
+	.materials-btn:hover {
+		background: #fff3cc;
+	}
+
+	.material-hero-lemon {
+		position: absolute;
+		width: 400px;
+		z-index: 1000;
+		bottom: 0;
+		right: -220px;
+	}
+
+	.material-deco-lemon-1 {
+		position: absolute;
+		width: 100px;
+		z-index: 1000;
+		bottom: 290px;
+		right: -25px;
+		rotate: -89deg;
+	}
+
+	.material-deco-lemon-2 {
+		position: absolute;
+		width: 100px;
+		z-index: 1000;
+		bottom: 30px;
 	}
 }
 
@@ -967,6 +1235,59 @@ body {
 	z-index: 3;
 }
 
+@media (max-width: 768px) {
+	.home-ranking {
+		padding: 0 20px 120px;
+		position: relative;
+	}
+
+	.ranking-title {
+		text-align: center;
+		font-family: "Nikumaru", sans-serif;
+		font-size: 36px;
+		color: #1f9725;
+		margin-bottom: 300px;
+	}
+
+	/* CARD WRAPPER */
+	.ranking-cards {
+		max-width: 1100px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	/* CARD BASE */
+	.ranking-card {
+		width: 320px;
+		text-align: center;
+		position: relative;
+	}
+
+	/* STAGGERED HEIGHTS */
+	.rank-1 {
+		margin-top: 0;
+	}
+	.rank-2 {
+		margin-top: 60px;
+	}
+	.rank-3 {
+		margin-top: 120px;
+	}
+
+	/* CROWN */
+	.rank-crown {
+		position: absolute;
+		top: -260px;
+		left: -36px;
+		width: 320px;
+		z-index: 3;
+	}
+}
+
 /* ------------------------------
    Ingridents
    ---------------------------- */
@@ -1039,18 +1360,18 @@ body {
 	max-width: 1100px;
 	margin: 0 auto;
 	padding: 120px 40px 32px;
-	border-radius: var(--radius-lg);
 	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
 	gap: 60px;
+	border-bottom-left-radius: 90px;
+	border-bottom-right-radius: 90px;
 }
 
 /* LEFT SIDE IMAGES */
 
 .product-left {
 	width: 40%;
-}
-
-.product-main-image {
 }
 
 .product-main-image img {
@@ -1098,7 +1419,7 @@ body {
 }
 
 .product-title-en {
-	font-size: 22px;
+	font-size: 26px;
 	margin-top: -8px;
 	color: var(--brand-dark-green);
 	font-weight: 800;
@@ -1107,13 +1428,13 @@ body {
 
 .product-price {
 	margin-top: 12px;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: bold;
 	font-family: "Kosugi Maru", sans-serif;
 }
 
 .price-tax {
-	font-size: 15px;
+	font-size: 18px;
 	color: var(--text-gray);
 }
 
@@ -1175,11 +1496,10 @@ body {
 	border: 3px solid var(--brand-yellow);
 	background: white;
 	width: 215px;
-
+	height: 50px;
 	font-family: "Kosugi Maru", sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: 600;
-
 	cursor: pointer;
 }
 
@@ -1202,6 +1522,7 @@ body {
 }
 
 .product-section p {
+	font-size: 15px;
 	line-height: 1.7;
 	color: var(--text-gray);
 	font-family: "Kosugi Maru", sans-serif;
@@ -1223,10 +1544,8 @@ body {
 	font-weight: 600;
 	font-size: 15px;
 	color: var(--brand-dark-green); /* 緑 */
-
 	text-decoration: none;
 	cursor: pointer;
-
 	transition: background 0.2s ease;
 }
 
@@ -1242,6 +1561,141 @@ body {
 	padding: 3px;
 }
 
+/* ==============================
+   PRODUCT DETAIL - MOBILE (SP)
+   375px – 767px
+================================ */
+@media (max-width: 767px) {
+	.product-wrapper {
+		flex-direction: column;
+		padding: 96px 20px 32px;
+	}
+
+	.product-left,
+	.product-right {
+		width: 100%;
+	}
+
+	.cart-section {
+		align-items: center;
+	}
+
+	.btn-add-cart {
+		margin: 0 auto;
+	}
+
+	.product-section {
+		text-align: left;
+	}
+}
+
+/*=============================== Start Gift Set Detail ==================================*/
+/* ===============================
+   GIFT SET PAGE
+================================ */
+
+.giftset {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 120px 24px;
+	text-align: center;
+}
+
+/* ===============================
+   HERO (TOP)
+================================ */
+
+.giftset-hero {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 48px;
+	margin-bottom: 90px;
+}
+
+.giftset-main-img {
+	width: 260px;
+	border-radius: 50%;
+}
+
+/* INFO */
+
+.giftset-info {
+	text-align: left;
+}
+
+.giftset-title {
+	font-size: 22px;
+	margin-bottom: 8px;
+	font-family: "Nikumaru", sans-serif;
+	color: var(--brand-dark-green);
+}
+
+.giftset-price {
+	font-size: 14px;
+	margin-bottom: 16px;
+	color: var(--text-gray);
+}
+
+/* ===============================
+   CONTENT IMAGE (MIDDLE)
+================================ */
+
+.giftset-menu {
+	margin-bottom: 80px;
+}
+
+.giftset-menu img {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+/* ===============================
+   BOX IMAGE (BOTTOM)
+================================ */
+
+.giftset-box img {
+	width: 180px;
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+}
+
+/* ===============================
+   MOBILE (≤767px)
+================================ */
+
+@media (max-width: 767px) {
+	.giftset {
+		padding: 80px 16px;
+	}
+
+	.giftset-hero {
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.giftset-info {
+		text-align: center;
+	}
+
+	.giftset-main-img {
+		width: 220px;
+	}
+
+	.giftset-box img {
+		width: 150px;
+	}
+
+	/* reuse existing button, just center it */
+	.giftset-info .btn-add-cart {
+		margin: 0 auto;
+	}
+}
+
+/*=============================== End Gift Set Detail ==================================*/
+
 /*=============================== Checkout Credit CSS ==================================*/
 /* -----------------------------------
    OUTER CONTAINER (BIG BOX)
@@ -1252,6 +1706,14 @@ body {
 	margin: 0 auto;
 	padding-top: 120px;
 	background: var(--brand-soft-white);
+}
+
+.checkout h1 {
+	font-size: 28px;
+	color: var(--brand-dark-green);
+	font-weight: 800;
+	text-align: center;
+	font-family: "Nikumaru", sans-serif;
 }
 
 .outer-box {
@@ -1273,7 +1735,8 @@ body {
 	border: 2px solid var(--brand-yellow); /* YELLOW BORDER */
 	border-radius: 12px; /* SMALL RADIUS */
 	background: #ffffff;
-	font-size: 16px;
+	color: var(--text-gray);
+	font-size: 15px;
 	box-sizing: border-box;
 }
 
@@ -1405,7 +1868,7 @@ body {
 }
 
 .radio-label {
-	font-size: 17px;
+	font-size: 15px;
 	font-weight: bold;
 	color: #4b4b4b;
 }
@@ -1453,11 +1916,104 @@ body {
 }
 /*=============================== End Checkout Credit CSS ==================================*/
 
+/*=============================== Start Checkout Credit CSS Mobile ==================================*/
+@media (max-width: 767px) {
+	/* PAGE */
+	.checkout {
+		max-width: 100%;
+		padding: 96px 16px 32px;
+	}
+
+	/* OUTER BOX */
+	.outer-box {
+		padding: 32px 20px;
+		border-radius: 28px;
+	}
+
+	/* INPUTS */
+	.order-form input,
+	.order-form select,
+	.order-form textarea {
+		font-size: 15px;
+		padding: 14px 16px;
+		margin-bottom: 14px;
+	}
+
+	/* CHECKBOX */
+	.checkbox {
+		font-size: 14px;
+		line-height: 1.4;
+	}
+
+	/* SECTION TITLES */
+	.section-title {
+		font-size: 16px;
+		margin: 24px 0 12px;
+	}
+
+	/* PAYMENT OPTIONS */
+	.payment-option {
+		margin-bottom: 12px;
+	}
+
+	/* DETAIL BOX */
+	.detail-box {
+		font-size: 13px;
+		line-height: 1.6;
+		padding: 14px 16px;
+	}
+
+	/* ORDER SUMMARY */
+	.cart-row {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		padding: 12px 0;
+	}
+
+	.product-info {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+	}
+
+	.product-img {
+		width: 48px;
+		height: 48px;
+		object-fit: cover;
+		border-radius: 8px;
+	}
+
+	.col-price,
+	.col-qty,
+	.col-subtotal {
+		font-size: 14px;
+		text-align: right;
+	}
+
+	/* TOTAL */
+	.cart-total-row {
+		display: flex;
+		justify-content: space-between;
+		font-size: 15px;
+		margin: 16px 0 20px;
+	}
+
+	/* SUBMIT BUTTON */
+	.submit-btn {
+		width: 100%;
+		padding: 14px;
+		font-size: 16px;
+		border-radius: 14px;
+	}
+}
+/*=============================== End Checkout Credit CSS Mobile ==================================*/
+
 /*=============================== Start Shopping Cart CSS ==================================*/
 
 /* Container */
 .cart-container {
-	max-width: 900px;
+	max-width: 90%;
 	margin: 40px auto;
 	text-align: center;
 	font-family: "Kosugi Maru", sans-serif;
@@ -1468,6 +2024,7 @@ body {
 	font-size: 28px;
 	color: var(--brand-dark-green);
 	font-weight: 800;
+	padding: 100px 0 0;
 	margin-bottom: 40px;
 	font-family: "Nikumaru", sans-serif;
 }
@@ -1477,6 +2034,7 @@ body {
 .cart-box-title {
 	color: var(--brand-dark-green);
 	font-weight: 800;
+	font-size: 18px;
 	margin-bottom: 40px;
 	font-family: "Nikumaru", sans-serif;
 }
@@ -1500,6 +2058,7 @@ body {
 /* Header row */
 .cart-header {
 	font-weight: bold;
+	font-size: 18px;
 	border-bottom: 1px solid #ddd;
 	padding-bottom: 12px;
 }
@@ -1513,12 +2072,14 @@ body {
 
 .product-img {
 	width: 70px;
+	font-size: 18px;
 	height: auto;
 	border-radius: 8px;
 }
 
 .jp {
 	margin: 0;
+	font-size: 18px;
 	font-weight: 800;
 	color: var(--brand-dark-green);
 	font-family: "Nikumaru", sans-serif;
@@ -1573,6 +2134,7 @@ body {
 	text-decoration: none;
 	color: var(--brand-dark-green);
 	font-weight: 700;
+	font-size: 15px;
 	background: white;
 	transition: 0.2s;
 	font-family: "Kosugi Maru", sans-serif;
@@ -1583,6 +2145,10 @@ body {
 }
 
 /*=============================== End Shopping Cart CSS ==================================*/
+
+/*=============================== Start Shopping Cart CSS Mobile ==================================*/
+
+/*=============================== End Shopping Cart CSS Mobile ==================================*/
 
 /*=============================== Start Contact CSS ==================================*/
 
@@ -1942,14 +2508,20 @@ body {
 ----------------------------------- */
 .body-curve {
 	width: 100%;
-	height: 120px;
-
+	height: 80px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
 	background: var(--brand-soft-white);
-
-	border-bottom-left-radius: 90px;
-	border-bottom-right-radius: 90px;
 	position: relative;
 	z-index: 2;
+}
+
+@media screen and (min-width: 768px) {
+	.body-curve {
+		height: 120px;
+		border-bottom-left-radius: 90px;
+		border-bottom-right-radius: 90px;
+	}
 }
 
 /* -----------------------------------
@@ -1965,6 +2537,14 @@ body {
 	border-top-right-radius: 90px;
 	position: relative;
 	z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+	.inverse-body-curve {
+		height: 80px;
+		border-top-left-radius: 50px;
+		border-top-right-radius: 50px;
+	}
 }
 
 /* -----------------------------------
@@ -2002,14 +2582,13 @@ body {
 	color: #ffffff;
 }
 
-/* ------------------------------
-   FOOTER
------------------------------- */
+/* ==================================================
+   FOOTER — MOBILE FIRST
+================================================== */
 
-/* FOOTER */
 .footer {
 	width: 100%;
-	height: 170px;
+	height: 330px;
 	background: #afcf96;
 	position: relative;
 	z-index: 1;
@@ -2017,29 +2596,41 @@ body {
 	padding: 150px 0 0 0;
 }
 
+/* INNER WRAPPER */
 .footer-inner {
 	max-width: 1100px;
 	margin: 0 auto;
+
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
+	text-align: center;
 }
 
-/* LEFT BLOCK */
+/* ==================================================
+   LEFT — LOGO BLOCK
+================================================== */
+
 .footer-logo {
-	height: 70px;
+	height: 56px;
 }
 
 .footer-brand {
-	margin-top: 4px;
+	margin-top: 6px;
+	font-weight: 600;
 	font-size: 14px;
+	color: var(--text-black);
 }
 
-/* CENTER LINKS */
+/* ==================================================
+   CENTER — LINKS
+================================================== */
+
 .footer-links {
 	list-style: none;
 	display: flex;
-	gap: 60px;
+	flex-direction: column;
+	gap: 14px;
 	padding: 0;
 	margin: 0;
 }
@@ -2054,39 +2645,48 @@ body {
 	opacity: 0.8;
 }
 
-/* SNS RIGHT AREA */
+/* ==================================================
+   RIGHT — SNS
+================================================== */
+
 .footer-sns {
-	text-align: right;
+	text-align: center;
 }
 
 .follow-label {
 	display: block;
 	font-size: 14px;
-	margin-bottom: 6px;
+	margin-bottom: 8px;
 	color: #ffffff;
+}
+
+.sns-icons {
+	display: flex;
+	justify-content: center;
+	gap: 14px;
 }
 
 .sns-icons img {
 	width: 24px;
-	margin-left: 10px;
 	cursor: pointer;
-	color: white;
 }
 
 .sns-icons img:hover {
 	opacity: 0.8;
 }
 
-/* LINE */
+/* ==================================================
+   DIVIDER & COPYRIGHT
+================================================== */
+
 .footer-line {
 	max-width: 990px;
-	margin: 10px auto 20px;
+	margin: 16px auto 16px;
 	height: 1px;
 	background: #6f8b6c;
 	opacity: 0.6;
 }
 
-/* COPYRIGHT */
 .footer-copy {
 	text-align: center;
 	font-size: 13px;
@@ -2094,33 +2694,36 @@ body {
 	color: #333;
 }
 
-/* ------------------------------
-   RESPONSIVE (SMARTPHONE)
------------------------------- */
+/* ==================================================
+   DESKTOP (≥768px)
+================================================== */
 
-@media (max-width: 768px) {
-	.product-wrapper {
-		flex-direction: column;
-		padding: 24px;
-	}
-
-	.product-left,
-	.product-right {
-		width: 100%;
-	}
-
-	.product-thumbnails img {
-		width: 64px;
-		height: 64px;
+@media screen and (min-width: 768px) {
+	.footer {
+		padding: 115px 0 0;
+		height: 160px;
 	}
 
 	.footer-inner {
-		flex-direction: column;
-		gap: 18px;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		text-align: left;
 	}
 
-	.nav ul {
-		display: none; /* ← 後でハンバーガーメニュー追加可 */
+	/* Links become horizontal */
+	.footer-links {
+		flex-direction: row;
+		gap: 48px;
+	}
+
+	/* SNS aligned right */
+	.footer-sns {
+		text-align: right;
+	}
+
+	.sns-icons {
+		justify-content: flex-end;
 	}
 }
 
