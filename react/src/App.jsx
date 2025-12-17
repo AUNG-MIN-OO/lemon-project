@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
 import Ingredient from "./pages/Ingredient.jsx";
 import Shopping_Cart from "./pages/Shopping_Cart.jsx";
 import Checkout from "./pages/Checkout.jsx";
@@ -32,6 +33,7 @@ export default function App() {
 			<LinkToHash />
 			<Routes>
 				<Route path="/" element={<Home />} />
+				<Route path="/about" element={<About />} />
 				<Route path="/ingredients" element={<Ingredient />} />
 				<Route path="/cart" element={<Shopping_Cart />} />
 				<Route path="/checkout" element={<Checkout />} />

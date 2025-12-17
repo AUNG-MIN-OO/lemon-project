@@ -2,7 +2,6 @@ import { useCart } from "../context/CartContext";
 import { useParams, Link } from "react-router-dom";
 import { useState } from "react";
 import products from "../data/products.json";
-
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Curve_Body from "../components/Curve_Body.jsx";

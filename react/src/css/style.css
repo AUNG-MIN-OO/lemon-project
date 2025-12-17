@@ -330,7 +330,8 @@ body {
 		color: var(--brand-soft-white);
 		text-decoration: none;
 		font-size: 16px;
-		font-family: "Kosugi Maru", sans-serif;
+		font-family: "Zen Kurenaido", sans-serif;
+		font-weight: 700;
 	}
 
 	.nav a:hover {
@@ -364,7 +365,7 @@ body {
 /* Circle image */
 .hero-photo {
 	position: absolute;
-	top: 245px;
+	top: 107px;
 	left: -106px;
 	width: 450px;
 	height: 345px;
@@ -386,9 +387,9 @@ body {
 }
 
 .hero-gift img {
-	width: 775px;
+	width: 630px;
 	margin-top: 88px;
-	top: 205px;
+	top: 248px;
 	left: -195px;
 	rotate: -6deg;
 	position: relative;
@@ -402,8 +403,8 @@ body {
 	right: -100px;
 	writing-mode: vertical-rl;
 	font-family: "Zen Kurenaido", sans-serif;
-	font-weight: 700;
-	font-size: 63px;
+	font-weight: bolder;
+	font-size: 70px;
 	line-height: 0.7;
 	color: var(--brand-dark-green);
 }
@@ -413,8 +414,8 @@ body {
 	position: absolute;
 	width: 290px;
 	z-index: 1000;
-	bottom: -65px;
-	right: -203px;
+	bottom: -109px;
+	right: -270px;
 }
 
 .lemon {
@@ -452,7 +453,7 @@ body {
 }
 
 .lemon-6 {
-	top: 195px;
+	top: 121px;
 	right: -175px;
 	rotate: -155deg;
 }
@@ -566,7 +567,7 @@ body {
 	}
 
 	.lemon-4 {
-		top: 856px;
+		top: 780px;
 		left: 320px;
 		rotate: 111deg;
 	}
@@ -644,8 +645,8 @@ body {
 	transform: translateY(-50%);
 	writing-mode: vertical-rl;
 	font-family: "Zen Kurenaido", sans-serif;
-	font-weight: 700;
-	font-size: 36px;
+	font-weight: bolder;
+	font-size: 40px;
 	color: #1f9725;
 	letter-spacing: 6px;
 }
@@ -687,8 +688,8 @@ body {
 	border: 3px solid #ffbc00;
 	border-radius: 12px;
 	color: #1f9725;
-	font-family: "Yomogi", cursive;
-	font-weight: bold;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: bolder;
 	font-size: 16px;
 	text-decoration: none;
 	background: #fffdf4;
@@ -703,7 +704,7 @@ body {
 	width: 400px;
 	z-index: 1000;
 	bottom: 0;
-	right: -220px;
+	right: -260px;
 }
 
 .material-deco-lemon-1 {
@@ -734,7 +735,8 @@ body {
 		top: 50%;
 		transform: translateY(-50%);
 		writing-mode: vertical-rl;
-		font-family: "Yomogi", cursive;
+		font-family: "Zen Kurenaido", sans-serif;
+		font-weight: 700;
 		font-size: 26px;
 		color: #1f9725;
 		letter-spacing: 6px;
@@ -777,8 +779,8 @@ body {
 		border: 3px solid #ffbc00;
 		border-radius: 12px;
 		color: #1f9725;
-		font-family: "Yomogi", cursive;
-		font-weight: bold;
+		font-family: "Zen Kurenaido", sans-serif;
+		font-weight: 700;
 		font-size: 16px;
 		text-decoration: none;
 		background: #fffdf4;
@@ -823,9 +825,10 @@ body {
 }
 
 .lineup-title {
-	font-size: 36px;
-	text-align: center;
+	font-family: "Zen Kurenaido", sans-serif;
 	font-weight: bolder;
+	font-size: 40px;
+	text-align: center;
 	color: var(--brand-dark-green);
 }
 
@@ -866,20 +869,22 @@ body {
 .lineup-card .jp {
 	margin: 20px 0;
 	font-size: 24px;
-	font-weight: 800;
 	color: var(--brand-dark-green);
-	font-family: "Nikumaru", sans-serif;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: 700;
 }
 
 .lineup-card .en {
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: bolder;
 	margin: 20px 0;
 	font-size: 24px;
 	color: #1f9725;
 }
 
 .lineup-card .price {
+	font-family: "Kosugi Maru", sans-serif;
 	margin: 10px 0 14px;
-	font-weight: bold;
 	font-size: 20px;
 }
 
@@ -890,6 +895,7 @@ body {
 }
 
 .lineup-card-info {
+	font-family: "Kosugi Maru", sans-serif;
 	height: 80px;
 }
 
@@ -900,13 +906,18 @@ body {
 
 .buy-btn {
 	border: 3px solid #ffbc00;
+	font-family: "Zen Kurenaido", sans-serif;
 	background: white;
 	border-radius: 12px;
 	padding: 8px 22px;
 	margin-top: 20px;
 	color: var(--brand-dark-green);
-	font-weight: bold;
+	font-weight: bolder;
 	font-size: 16px;
+}
+
+.buy-btn:hover {
+	background: #fff3cc;
 }
 
 /* ===============================
@@ -958,8 +969,9 @@ body {
 
 .home-giftset-title {
 	text-align: center;
-	font-family: "Nikumaru", sans-serif;
-	font-size: 36px;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: bolder;
+	font-size: 40px;
 	color: var(--brand-dark-green);
 	margin-bottom: 40px;
 }
@@ -1015,8 +1027,22 @@ body {
 	text-align: center;
 }
 
-.home-giftset-btn img {
-	width: 240px;
+.home-giftset-btn button {
+	padding: 2px 18px;
+	border-radius: 10px;
+	border: 5px solid var(--brand-dark-green);
+	background: var(--brand-soft-white);
+	width: 250px;
+	height: 80px;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.home-giftset-btn button:hover {
+	background: var(--brand-yellow);
+	color: var(--brand-soft-white);
 }
 
 /* DECORATIONS */
@@ -1077,8 +1103,9 @@ body {
 
 .schedule-title {
 	text-align: center;
-	font-family: "Nikumaru", sans-serif;
-	font-size: 36px;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: bolder;
+	font-size: 40px;
 	color: #1f9725;
 	margin-bottom: 40px;
 }
@@ -1134,7 +1161,8 @@ body {
 	top: 50%;
 	transform: translateY(-50%);
 	text-align: center;
-	font-family: "Kosugi Maru", sans-serif;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: bolder;
 	font-size: 14px;
 }
 
@@ -1163,6 +1191,7 @@ body {
 
 /* DATE (TOP) */
 .schedule-date {
+	font-family: "Kosugi Maru", sans-serif;
 	font-size: 14px;
 	margin-bottom: 8px;
 }
@@ -1176,6 +1205,7 @@ body {
 
 /* DAY (BOTTOM) */
 .schedule-day {
+	font-family: "Kosugi Maru", sans-serif;
 	font-size: 13px;
 	margin-top: 6px;
 }
@@ -1192,8 +1222,9 @@ body {
 
 .ranking-title {
 	text-align: center;
-	font-family: "Nikumaru", sans-serif;
-	font-size: 36px;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: bolder;
+	font-size: 40px;
 	color: #1f9725;
 	margin-bottom: 300px;
 }
@@ -1243,7 +1274,8 @@ body {
 
 	.ranking-title {
 		text-align: center;
-		font-family: "Nikumaru", sans-serif;
+		font-family: "Zen Kurenaido", sans-serif;
+		font-weight: bolder;
 		font-size: 36px;
 		color: #1f9725;
 		margin-bottom: 300px;
@@ -1291,66 +1323,706 @@ body {
 /* ------------------------------
    Ingridents
    ---------------------------- */
-/* SECTION */
-.ingredients-section {
+.ingredient-section {
+	background-color: var(--brand-soft-white);
+	padding: 40px 30px;
+	min-height: 100vh;
+}
+
+.ingredient-container {
 	max-width: 1000px;
 	margin: 0 auto;
-	padding: 80px;
-	font-family: "Kosugi Maru", sans-serif;
 }
 
-/* TITLE */
 .ingredients-title {
 	text-align: center;
-	font-family: "Nikumaru", sans-serif;
-	font-size: 42px;
-	color: #1f9725;
-	margin-bottom: 32px;
+	color: var(--brand-dark-green);
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: bolder;
+	font-size: 36px;
+	margin: 50px;
+	letter-spacing: 1.5;
 }
 
-/* CARD */
 .ingredient-card {
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
 	align-items: center;
-	gap: 14px;
-	border-radius: 20px;
-	border: 5px solid #1f9725;
-	padding: 14px;
-	margin-bottom: 22px;
-	background: #fff;
+	margin-bottom: 40px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-/* LEFT / RIGHT */
-.ingredient-card.left {
-	flex-direction: row;
+.ingredient-card-left,
+.ingredient-card-right {
+	display: flex;
+	flex-direction: column;
 }
 
-.ingredient-card.right {
-	flex-direction: row-reverse;
+.ingredient-card-info {
+	background-color: #fff;
+	border: 3px solid var(--brand-dark-green);
+	border-radius: 12px;
+	padding: 1.5rem;
+	line-height: 2;
 }
 
-/* TEXT */
-.ingredient-text h2 {
-	margin: 0 0 6px;
-	font-family: "Nikumaru", sans-serif;
-	font-size: 32px;
-	color: #1f9725;
+/* Text box styling */
+.ingredient-card-left h2,
+.ingredient-card-right h2 {
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: bolder;
+	color: var(--brand-dark-green);
+	font-size: 24px;
+	margin-bottom: 20px;
+	line-height: 1.4;
 }
 
-.ingredient-text p {
-	margin: 0;
-	font-size: 18px;
-	line-height: 1.6;
-	color: #333;
+.ingredient-card-left p,
+.ingredient-card-right p {
+	font-family: "Kosugi Maru", sans-serif;
+	font-weight: 500px;
+	font-size: 14px;
+	line-height: 2;
+	letter-spacing: 2px;
+	color: var(--text-gray);
 }
 
-/* IMAGE */
-.ingredient-image img {
-	width: 96px;
-	height: 96px;
+/* Image styling */
+.ingredient-card img {
+	width: 100%;
+	max-width: 300px;
+	height: 300px;
 	object-fit: cover;
 	border-radius: 50%;
+	margin: 0 auto;
+	display: block;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+/* Tablet view */
+@media (max-width: 1024px) {
+	.ingredient-card {
+		gap: 2opx;
+		max-width: 800px;
+	}
+
+	.ingredient-card img {
+		max-width: 250px;
+		height: 250px;
+	}
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+	.ingredient-section {
+		padding: 3opx 20px;
+	}
+
+	.ingredients-title {
+		font-size: 1.75rem;
+		margin-bottom: 3rem;
+	}
+
+	.ingredient-card {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+		margin-bottom: 3rem;
+	}
+
+	.ingredient-card img {
+		max-width: 220px;
+		height: 220px;
+	}
+
+	.ingredient-card-left p,
+	.ingredient-card-right p {
+		padding: 1.25rem;
+		font-size: 0.9rem;
+	}
+}
+
+/* Small mobile view */
+@media (max-width: 480px) {
+	.ingredient-section {
+		padding: 2rem 1rem;
+	}
+
+	.ingredients-title {
+		font-size: 1.5rem;
+		margin-bottom: 2.5rem;
+	}
+
+	.ingredient-card {
+		gap: 1.5rem;
+		margin-bottom: 2.5rem;
+	}
+
+	.ingredient-card-left h2,
+	.ingredient-card-right h2 {
+		font-size: 1.15rem;
+	}
+
+	.ingredient-card-left p,
+	.ingredient-card-right p {
+		padding: 1rem;
+		font-size: 0.85rem;
+		line-height: 1.7;
+	}
+
+	.ingredient-card img {
+		max-width: 180px;
+		height: 180px;
+	}
+}
+
+/* =================================================
+   Start About Shop
+================================================= */
+
+.about-section {
+	height: 100vh;
+	background: var(--brand-yellow);
+	padding: 80px 16px 120px;
+}
+
+.about-title {
+	font-family: "Zen Kurenaido", sans-serif;
+	padding-top: 30px;
+	font-weight: bolder;
+	text-align: center;
+	color: var(--brand-dark-green);
+	font-size: 40px;
+	margin-bottom: 56px;
+}
+
+/* ===== Image ===== */
+.about-img {
+	position: absolute;
+	top: 254px;
+	left: 380px;
+	z-index: 1;
+	padding: 50px;
+}
+
+.shop-image {
+	width: 300px;
+	border-radius: 24px;
+	object-fit: cover;
+}
+
+/* ===== Text Card ===== */
+.about-shop {
+	top: 290px;
+	right: 225px;
+	position: absolute;
+	background: var(--brand-soft-white);
+	border-radius: 28px;
+	padding: 50px;
+	max-width: 60%;
+	margin-left: -80px;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.about-shop p {
+	width: 500px;
+	text-align: left;
+	font-family: "Kosugi Maru", sans-serif;
+	font-weight: 500px;
+	font-size: 15px;
+	line-height: 1.9;
+	color: var(--text-gray);
+}
+
+/* Story Card */
+.story-card {
+	margin: 0 auto 80px;
+	padding: 50px 40px;
+	border: 4px solid #7cb342;
+	border-radius: 30px;
+	position: relative;
+	z-index: 2;
+}
+
+.story-card::before {
+	content: "";
+	position: absolute;
+	right: -40px;
+	top: 30%;
+	width: 100px;
+	height: 100px;
+	background: radial-gradient(circle, #ffb347 0%, #ff8c00 100%);
+	border-radius: 50%;
+	opacity: 0.3;
+	z-index: -1;
+}
+
+.story-card::after {
+	content: "";
+	position: absolute;
+	top: -30px;
+	left: 50px;
+	width: 0;
+	height: 0;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-bottom: 50px solid #7cb342;
+	opacity: 0.8;
+}
+
+.story-text {
+	margin-bottom: 40px;
+}
+
+.story-text h3 {
+	color: #2d5016;
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.story-text p {
+	color: #333;
+	line-height: 1.9;
+	font-size: 15px;
+	margin-bottom: 20px;
+}
+
+.story-images {
+	display: flex;
+	justify-content: space-around;
+	gap: 30px;
+	align-items: center;
+}
+
+.story-images img {
+	width: 280px;
+	height: 280px;
+	object-fit: cover;
+	border-radius: 50%;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Ingredients Card */
+.About-ingredient-card {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 50px 40px;
+	background: white;
+	border: 4px solid #7cb342;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	position: relative;
+	z-index: 2;
+}
+
+.About-ingredient-card::before {
+	content: "";
+	position: absolute;
+	left: -40px;
+	bottom: 20%;
+	width: 100px;
+	height: 100px;
+	background: radial-gradient(circle, #ffb347 0%, #ff8c00 100%);
+	border-radius: 50%;
+	opacity: 0.3;
+	z-index: -1;
+}
+
+.About-ingredient-card::after {
+	content: "";
+	position: absolute;
+	bottom: -30px;
+	right: 50px;
+	width: 0;
+	height: 0;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-top: 50px solid #7cb342;
+	opacity: 0.8;
+}
+
+.About-ingredient-images {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	flex-shrink: 0;
+}
+
+.About-ingredient-images img {
+	width: 220px;
+	height: 180px;
+	object-fit: cover;
+	border-radius: 20px;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.About-ingredient-text {
+	flex: 1;
+}
+
+.About-ingredient-text h3 {
+	color: #2d5016;
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.About-ingredient-text p {
+	color: #333;
+	line-height: 1.9;
+	font-size: 15px;
+}
+
+/* ======================
+   SP（スマホ）
+   ====================== */
+@media (max-width: 767px) {
+	/* iPhone / Android */
+
+	.about-section {
+		padding-top: 30px;
+		padding-bottom: 50px;
+		background: linear-gradient(
+			180deg,
+			#ffb700 0%,
+			#ffa500 30%,
+			#fff9e6 30%
+		);
+	}
+
+	.about-section::before,
+	.about-section::after {
+		width: 80px;
+		height: 80px;
+	}
+
+	.about-section::before {
+		left: 10px;
+		top: 150px;
+	}
+
+	.about-section::after {
+		right: 10px;
+		top: 250px;
+	}
+
+	/* Intro Card - SP */
+	.about-card {
+		flex-direction: column;
+		padding: 25px 15px;
+		margin: 0 15px 50px;
+		border-radius: 20px;
+	}
+
+	.shop-image {
+		width: 100%;
+		height: auto;
+		max-height: 250px;
+		max-width: 100%;
+		border-radius: 15px;
+	}
+
+	.about-shop h2 {
+		font-size: 22px;
+		margin-bottom: 15px;
+	}
+
+	.about-shop p {
+		font-size: 14px;
+		line-height: 1.8;
+	}
+
+	/* Story Card - SP */
+	.story-card {
+		padding: 30px 20px;
+		margin: 0 15px 50px;
+		border-radius: 20px;
+		border-width: 3px;
+	}
+
+	.story-card::before {
+		right: -25px;
+		width: 70px;
+		height: 70px;
+	}
+
+	.story-card::after {
+		display: none;
+	}
+
+	.story-text {
+		margin-bottom: 30px;
+	}
+
+	.story-text h3 {
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
+
+	.story-text p {
+		font-size: 14px;
+		line-height: 1.8;
+		margin-bottom: 15px;
+	}
+
+	.story-images {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.story-images img {
+		width: 100%;
+		max-width: 280px;
+		height: auto;
+		aspect-ratio: 1;
+		margin: 0 auto;
+	}
+
+	/* Ingredients Card - SP */
+	.About-ingredient-card {
+		flex-direction: column-reverse;
+		padding: 30px 20px;
+		margin: 0 15px;
+		border-radius: 20px;
+		border-width: 3px;
+	}
+
+	.About-ingredient-card::before {
+		left: -25px;
+		width: 70px;
+		height: 70px;
+	}
+
+	.About-ingredient-card::after {
+		display: none;
+	}
+
+	.About-ingredient-images {
+		flex-direction: column;
+		width: 100%;
+		gap: 15px;
+	}
+
+	.About-ingredient-images img {
+		width: 100%;
+		max-width: 280px;
+		height: auto;
+		aspect-ratio: 1.2;
+		margin: 0 auto;
+	}
+
+	.About-ingredient-text h3 {
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
+
+	.About-ingredient-text p {
+		font-size: 14px;
+		line-height: 1.8;
+	}
+}
+
+/* ======================
+   Tablet（タブレット）
+   ====================== */
+@media (min-width: 768px) and (max-width: 1023px) {
+	/* iPad / small tablets */
+
+	.about-section {
+		padding-top: 50px;
+		padding-bottom: 70px;
+		background: linear-gradient(
+			180deg,
+			#ffb700 0%,
+			#ffa500 35%,
+			#fff9e6 35%
+		);
+	}
+
+	.about-section::before,
+	.about-section::after {
+		width: 100px;
+		height: 100px;
+	}
+
+	.about-section::before {
+		left: 15px;
+		top: 180px;
+	}
+
+	.about-section::after {
+		right: 15px;
+		top: 300px;
+	}
+
+	/* Intro Card - Tablet */
+	.about-card {
+		margin: 0 20px 70px;
+		padding: 35px 30px;
+		gap: 25px;
+	}
+
+	.shop-image {
+		width: 250px;
+		height: 250px;
+	}
+
+	.about-shop h2 {
+		font-size: 26px;
+	}
+
+	.about-shop p {
+		font-size: 14px;
+	}
+
+	/* Story Card - Tablet */
+	.story-card {
+		margin: 0 20px 70px;
+		padding: 45px 35px;
+	}
+
+	.story-card::before {
+		right: -35px;
+		width: 90px;
+		height: 90px;
+	}
+
+	.story-card::after {
+		border-left: 28px solid transparent;
+		border-right: 28px solid transparent;
+		border-bottom: 45px solid #7cb342;
+	}
+
+	.story-text h3 {
+		font-size: 26px;
+	}
+
+	.story-text p {
+		font-size: 14px;
+	}
+
+	.story-images {
+		gap: 25px;
+	}
+
+	.story-images img {
+		width: 240px;
+		height: 240px;
+	}
+
+	/* Ingredients Card - Tablet */
+	.About-ingredient-card {
+		margin: 0 20px;
+		padding: 45px 35px;
+		gap: 35px;
+	}
+
+	.About-ingredient-card::before {
+		left: -35px;
+		width: 90px;
+		height: 90px;
+	}
+
+	.About-ingredient-card::after {
+		border-left: 28px solid transparent;
+		border-right: 28px solid transparent;
+		border-top: 45px solid #7cb342;
+	}
+
+	.About-ingredient-images img {
+		width: 200px;
+		height: 165px;
+	}
+
+	.About-ingredient-text h3 {
+		font-size: 26px;
+	}
+
+	.About-ingredient-text p {
+		font-size: 14px;
+	}
+}
+
+/* ======================
+   PC（デスクトップ）
+   ====================== */
+@media (min-width: 1024px) {
+	/* Laptop / Desktop */
+
+	.about-section {
+		padding-top: 60px;
+		padding-bottom: 80px;
+	}
+
+	.about-card {
+		max-width: 1000px;
+	}
+
+	.story-card {
+		max-width: 1000px;
+	}
+
+	.About-ingredient-card {
+		max-width: 1000px;
+	}
+
+	/* Hover effects for desktop */
+	.shop-image {
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.shop-image:hover {
+		transform: scale(1.05);
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+	}
+
+	.story-images img {
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.story-images img:hover {
+		transform: scale(1.05);
+		box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+	}
+
+	.About-ingredient-images img {
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.About-ingredient-images img:hover {
+		transform: scale(1.05);
+		box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+	}
+
+	.about-card {
+		transition: box-shadow 0.3s ease;
+	}
+
+	.about-card:hover {
+		box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+	}
+
+	.story-card,
+	.About-ingredient-card {
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.story-card:hover,
+	.About-ingredient-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+	}
+}
+
+/* =================================================
+   End About Shop
+================================================= */
 
 /* ------------------------------
    MAIN PRODUCT WRAPPER
@@ -1412,8 +2084,8 @@ body {
 
 .product-title-jp {
 	font-size: 26px;
-	font-weight: 800;
-	font-family: "Nikumaru", sans-serif; /* TITLE FONT */
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: 700;
 	color: var(--brand-dark-green);
 	margin-bottom: 45px;
 }
@@ -1422,15 +2094,15 @@ body {
 	font-size: 26px;
 	margin-top: -8px;
 	color: var(--brand-dark-green);
-	font-weight: 800;
-	font-family: "Nikumaru", sans-serif;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: 700;
 }
 
 .product-price {
 	margin-top: 12px;
 	font-size: 18px;
-	font-weight: bold;
-	font-family: "Kosugi Maru", sans-serif;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: 700;
 }
 
 .price-tax {
@@ -1442,6 +2114,7 @@ body {
 	margin: 16px 0 28px;
 	line-height: 1.6;
 	font-family: "Kosugi Maru", sans-serif;
+	font-weight: 700;
 	color: var(--text-gray);
 }
 
@@ -1457,7 +2130,8 @@ body {
 /* ラベル */
 .qty-label {
 	font-family: "Kosugi Maru", sans-serif;
-	font-weight: 400;
+	font-size: 24;
+	font-weight: 700;
 	margin-bottom: 4px;
 }
 
@@ -1479,27 +2153,33 @@ body {
 	border: none;
 	font-size: 15px;
 	cursor: pointer;
-	font-family: "Nikumaru", sans-serif;
-	font-weight: 800;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: 700;
+}
+
+.total-price {
+	font-size: 24px;
 }
 
 /* 数字 */
 .qty-number {
-	font-size: 16px;
+	font-size: 28px;
 	font-family: "Kosugi Maru", sans-serif;
+	font-weight: 700;
 }
 
 /* カートボタン */
 .btn-add-cart {
 	padding: 2px 18px;
+	margin-bottom: 20px;
 	border-radius: 10px;
 	border: 3px solid var(--brand-yellow);
 	background: white;
 	width: 215px;
 	height: 50px;
-	font-family: "Kosugi Maru", sans-serif;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: 700;
 	font-size: 15px;
-	font-weight: 600;
 	cursor: pointer;
 }
 
@@ -1515,13 +2195,14 @@ body {
 
 .product-section h3 {
 	color: var(--brand-dark-green);
-	font-size: 18px;
+	font-size: 24px;
 	margin-bottom: 6px;
-	font-weight: 800;
-	font-family: "Nikumaru", sans-serif;
+	font-family: "Kosugi Maru", sans-serif;
+	font-weight: 700;
 }
 
 .product-section p {
+	font-weight: 700;
 	font-size: 15px;
 	line-height: 1.7;
 	color: var(--text-gray);
@@ -1540,8 +2221,8 @@ body {
 	border-radius: 12px;
 	background: #ffffff;
 
-	font-family: "Kosugi Maru", sans-serif;
-	font-weight: 600;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: 700;
 	font-size: 15px;
 	color: var(--brand-dark-green); /* 緑 */
 	text-decoration: none;
@@ -1627,7 +2308,8 @@ body {
 .giftset-title {
 	font-size: 22px;
 	margin-bottom: 8px;
-	font-family: "Nikumaru", sans-serif;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: 700;
 	color: var(--brand-dark-green);
 }
 
@@ -1709,11 +2391,11 @@ body {
 }
 
 .checkout h1 {
-	font-size: 28px;
+	font-size: 40px;
 	color: var(--brand-dark-green);
-	font-weight: 800;
 	text-align: center;
-	font-family: "Nikumaru", sans-serif;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: 700;
 }
 
 .outer-box {
@@ -1783,7 +2465,7 @@ body {
 }
 
 .option-header {
-	font-weight: bold;
+	font-weight: 700;
 	display: flex;
 	align-items: center;
 	margin-bottom: 10px;
@@ -1827,7 +2509,7 @@ body {
 
 .item-info .name {
 	font-size: 15px;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .item-info .name span {
@@ -1837,7 +2519,7 @@ body {
 }
 
 .price {
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 15px;
 	white-space: nowrap;
 }
@@ -1869,7 +2551,7 @@ body {
 
 .radio-label {
 	font-size: 15px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #4b4b4b;
 }
 
@@ -1896,7 +2578,7 @@ body {
 }
 
 .total-box .total {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 /* -----------------------------------
@@ -1910,7 +2592,7 @@ body {
 	border-radius: 12px;
 	background: var(--brand-yellow);
 	font-size: 18px;
-	font-weight: bold;
+	font-weight: 700;
 	cursor: pointer;
 	color: #333;
 }
@@ -2016,27 +2698,28 @@ body {
 	max-width: 90%;
 	margin: 40px auto;
 	text-align: center;
-	font-family: "Kosugi Maru", sans-serif;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: 700;
 }
 
 /* Title */
 .cart-title {
-	font-size: 28px;
+	font-size: 40px;
 	color: var(--brand-dark-green);
-	font-weight: 800;
 	padding: 100px 0 0;
 	margin-bottom: 40px;
-	font-family: "Nikumaru", sans-serif;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: bolder;
 }
 
 /* White box */
 
 .cart-box-title {
 	color: var(--brand-dark-green);
-	font-weight: 800;
 	font-size: 18px;
 	margin-bottom: 40px;
-	font-family: "Nikumaru", sans-serif;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: 700;
 }
 
 .cart-box {
@@ -2048,6 +2731,7 @@ body {
 
 /* Base row */
 .cart-row {
+	font-family: "Kosugi Maru", sans-serif;
 	display: grid;
 	grid-template-columns: 1.4fr 1fr 1fr 1fr;
 	align-items: center;
@@ -2057,7 +2741,8 @@ body {
 
 /* Header row */
 .cart-header {
-	font-weight: bold;
+	font-family: "Kosugi Maru", sans-serif;
+	font-weight: 700;
 	font-size: 18px;
 	border-bottom: 1px solid #ddd;
 	padding-bottom: 12px;
@@ -2080,9 +2765,9 @@ body {
 .jp {
 	margin: 0;
 	font-size: 18px;
-	font-weight: 800;
 	color: var(--brand-dark-green);
-	font-family: "Nikumaru", sans-serif;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: 700;
 }
 
 .en {
@@ -2107,15 +2792,16 @@ body {
 	display: flex;
 	justify-content: space-between;
 	padding: 10px 0;
+	font-family: "Kosugi Maru", sans-serif;
 	font-size: 18px;
 }
 
 .total-label {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .total-amount {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 /* Buttons */
@@ -2133,11 +2819,11 @@ body {
 	border-radius: 12px;
 	text-decoration: none;
 	color: var(--brand-dark-green);
-	font-weight: 700;
 	font-size: 15px;
 	background: white;
 	transition: 0.2s;
-	font-family: "Kosugi Maru", sans-serif;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: 700;
 }
 
 .btn-yellow:hover {
@@ -2186,7 +2872,7 @@ body {
 
 .access-name span {
 	font-size: 26px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #1f9725;
 }
 
@@ -2210,7 +2896,8 @@ body {
 	border-radius: 12px;
 	color: #1f9725;
 	background: #fff;
-	font-weight: bold;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: 700;
 	text-decoration: none;
 	margin: 20px 0;
 }
@@ -2249,7 +2936,8 @@ body {
 
 .map-link {
 	font-size: 18px;
-	font-weight: bold;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: 700;
 	margin-top: 10px;
 }
 
@@ -2286,7 +2974,8 @@ body {
 	font-size: 17px;
 	line-height: 2;
 	color: #444;
-	font-weight: bolder;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: 700;
 }
 
 /* Text paragraphs */
@@ -2331,7 +3020,8 @@ body {
 	color: #1f9725;
 	font-size: 30px;
 	margin-bottom: 20px;
-	font-weight: bold;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: 700;
 }
 
 /* Price */
@@ -2428,7 +3118,8 @@ body {
 .item p {
 	margin-top: 6px;
 	color: #1f9725;
-	font-weight: bold;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: 700;
 	font-size: 18px;
 }
 
@@ -2565,7 +3256,8 @@ body {
 
 	color: var(--brand-yellow);
 	font-size: 24px;
-	font-weight: bold;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: 700;
 
 	cursor: pointer;
 	z-index: 2000;
@@ -2617,7 +3309,8 @@ body {
 
 .footer-brand {
 	margin-top: 6px;
-	font-weight: 600;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: 700;
 	font-size: 14px;
 	color: var(--text-black);
 }
