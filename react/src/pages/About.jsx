@@ -7,7 +7,6 @@ export default function About() {
 	return (
 		<>
 			<Header />
-
 			<section className="about-section">
 				{/* ===== Intro ===== */}
 				<div className="about-wrapper">
@@ -46,16 +45,17 @@ export default function About() {
 					<div className="story-images">
 						<img
 							src="/images/baking_cookie1.png"
+							className="story-img-left"
 							alt="Baking Cookie Photo"
 						/>
 						<img
 							src="/images/baking_cookie2.png"
+							className="story-img-right"
 							alt="Baking Cookie Photo"
 						/>
 					</div>
 				</div>
 			</section>
-
 			{/* ===== Ingredients ===== */}
 			<section className="about-ingredient-section">
 				<div className="about-ingredient-card">
@@ -81,9 +81,7 @@ export default function About() {
 				</div>
 			</section>
 			<Curve_Body />
-
 			<ScrollToTopButton />
-
 			<Footer />
 		</>
 	);

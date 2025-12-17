@@ -1482,7 +1482,7 @@ body {
 ================================================= */
 
 .about-section {
-	height: 100vh;
+	height: 80vh;
 	background: var(--brand-yellow);
 	padding: 80px 16px 120px;
 }
@@ -1501,7 +1501,7 @@ body {
 .about-img {
 	position: absolute;
 	top: 254px;
-	left: 380px;
+	left: 284px;
 	z-index: 1;
 	padding: 50px;
 }
@@ -1515,14 +1515,13 @@ body {
 /* ===== Text Card ===== */
 .about-shop {
 	top: 290px;
-	right: 225px;
+	right: 300px;
 	position: absolute;
 	background: var(--brand-soft-white);
 	border-radius: 28px;
 	padding: 50px;
 	max-width: 60%;
 	margin-left: -80px;
-	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 .about-shop p {
@@ -1537,55 +1536,35 @@ body {
 
 /* Story Card */
 .story-card {
-	margin: 0 auto 80px;
-	padding: 50px 40px;
+	margin: 50px auto 80px;
+	padding: 30px 40px;
 	border: 4px solid #7cb342;
 	border-radius: 30px;
 	position: relative;
 	z-index: 2;
-}
-
-.story-card::before {
-	content: "";
-	position: absolute;
-	right: -40px;
-	top: 30%;
-	width: 100px;
-	height: 100px;
-	background: radial-gradient(circle, #ffb347 0%, #ff8c00 100%);
-	border-radius: 50%;
-	opacity: 0.3;
-	z-index: -1;
-}
-
-.story-card::after {
-	content: "";
-	position: absolute;
-	top: -30px;
-	left: 50px;
-	width: 0;
-	height: 0;
-	border-left: 30px solid transparent;
-	border-right: 30px solid transparent;
-	border-bottom: 50px solid #7cb342;
-	opacity: 0.8;
+	width: 50%;
+	height: auto;
 }
 
 .story-text {
 	margin-bottom: 40px;
+	width: 65%;
 }
 
 .story-text h3 {
-	color: #2d5016;
-	font-size: 28px;
-	font-weight: bold;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: bolder;
+	color: var(--brand-dark-green);
+	font-size: 40px;
 	margin-bottom: 30px;
 	text-align: center;
 }
 
 .story-text p {
-	color: #333;
-	line-height: 1.9;
+	font-family: "Kosugi Maru", sans-serif;
+	font-weight: 700px;
+	color: var(--text-gray);
+	line-height: 3;
 	font-size: 15px;
 	margin-bottom: 20px;
 }
@@ -1598,11 +1577,21 @@ body {
 }
 
 .story-images img {
+	position: absolute;
 	width: 280px;
 	height: 280px;
 	object-fit: cover;
 	border-radius: 50%;
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.story-img-right {
+	top: 17px;
+	right: -76px;
+}
+
+.story-img-left {
+	top: 277px;
+	right: 9px;
 }
 
 /* Ingredients Card */
@@ -1914,8 +1903,13 @@ body {
 	.story-images img {
 		width: 240px;
 		height: 240px;
+		transition: transform 0.4s ease, box-shadow 0.4s ease;
 	}
 
+	.story-images img:hover {
+		transform: scale(1.05) translateY(-4px);
+		box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+	}
 	/* Ingredients Card - Tablet */
 	.About-ingredient-card {
 		margin: 0 20px;
@@ -1988,7 +1982,6 @@ body {
 
 	.story-images img:hover {
 		transform: scale(1.05);
-		box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 	}
 
 	.About-ingredient-images img {
@@ -3221,9 +3214,7 @@ body {
 .inverse-body-curve {
 	width: 100%;
 	height: 110px;
-
 	background: var(--brand-soft-white);
-
 	border-top-left-radius: 90px;
 	border-top-right-radius: 90px;
 	position: relative;
