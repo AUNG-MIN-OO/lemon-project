@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import Curve_Body from "../components/Curve_Body.jsx";
 
 export default function ProductDetail() {
+	const { addToCart } = useCart();
 	const { id } = useParams(); // ← URL: /product/:id
 	const product = products[id]; // ← JSON lookup
 	const [qty, setQty] = useState(1);
@@ -16,8 +17,6 @@ export default function ProductDetail() {
 	}
 
 	const totalPrice = product.price * qty;
-
-	const { addToCart } = useCart();
 
 	return (
 		<>
