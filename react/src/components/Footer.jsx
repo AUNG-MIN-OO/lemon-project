@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
 	return (
 		<footer className="footer">
@@ -15,19 +17,19 @@ export default function Footer() {
 				{/* CENTER */}
 				<ul className="footer-links">
 					<li>
-						<a href="#">3&1とは</a>
+						<Link to="/about">3&1とは</Link>
 					</li>
 					<li>
-						<a href="#">商品のご案内</a>
+						<Link to="/#lineup">商品のご案内</Link>
 					</li>
 					<li>
-						<a href="#">ギフトセット</a>
+						<Link to="/#home-gift-set">ギフトセット</Link>
 					</li>
 					<li>
-						<a href="#">お客様の声</a>
+						<Link to="/review">お客様の声</Link>
 					</li>
 					<li>
-						<a href="#">お問い合わせ</a>
+						<Link to="/access">アクセス</Link>
 					</li>
 				</ul>
 
@@ -35,8 +37,24 @@ export default function Footer() {
 				<div className="footer-sns">
 					<span className="follow-label">Follow Us</span>
 					<div className="sns-icons">
-						<img src="../images/insta.svg" alt="Instagram" />
-						<img src="../images/gmail.svg" alt="TikTok" />
+						<a
+							href="https://www.instagram.com/3and1_yakigashi?igsh=YXZoMHE4YXB6d2p1"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<img
+								src="/images/insta.svg"
+								alt="インスタグラム"
+								className="insta-icon"
+							/>
+						</a>
+						<a
+							href="mailto:yakigashi3and1@gmail.com"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<img src="../images/gmail.svg" alt="Gmail" />
+						</a>
 					</div>
 				</div>
 			</div>

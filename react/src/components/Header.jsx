@@ -23,7 +23,7 @@ export default function Header() {
 				<nav className="nav">
 					<ul>
 						<li>
-							<Link to="/#">3&1とは</Link>
+							<Link to="/about">3&1とは</Link>
 						</li>
 						<li>
 							<Link to="/#lineup">商品のご案内</Link>
@@ -54,7 +54,7 @@ export default function Header() {
 					</Link>
 
 					<a
-						href="https://instagram.com"
+						href="https://www.instagram.com/3and1_yakigashi?igsh=YXZoMHE4YXB6d2p1"
 						target="_blank"
 						rel="noopener noreferrer"
 					>

@@ -8,6 +8,7 @@ import ProductDetail from "./pages/Product_Detail.jsx";
 import GiftDetail from "./pages/Gift_Detail.jsx";
 import Receipt from "./pages/Receipt.jsx";
 import Review from "./pages/Review.jsx";
+import Ingredients from "./pages/Ingredient.jsx";
 import LinkToHash from "./components/LinkToHash.jsx";
 import Access from "./pages/Access.jsx";
 import Loader from "./components/Loader.jsx";
@@ -42,6 +43,7 @@ export default function App() {
 				<Route path="/receipt" element={<Receipt />} />
 				<Route path="/review" element={<Review />} />
 				<Route path="/access" element={<Access />} />
+				<Route path="/ingredient" element={<Ingredients />} />
 			</Routes>
 		</>
 	);

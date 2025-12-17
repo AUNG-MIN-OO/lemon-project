@@ -25,7 +25,7 @@ export default function Lineup() {
 	const progress = maxIndex > 0 ? (index / maxIndex) * 100 : 0;
 
 	return (
-		<section className="lineup" id="lineup">
+		<section className="lineup scroll-section" id="lineup">
 			<h2 className="lineup-title">ラインアップ</h2>
 
 			{/* Slider */}
@@ -42,9 +42,11 @@ export default function Lineup() {
 								<img src={p.images.main} alt={p.name} />
 							</div>
 
-							<p className="jp">{p.name}</p>
-							<p className="en">{p.nameEn}</p>
-							<p className="price">{p.price}円（税込）</p>
+							<div className="lineup-card-name-price">
+								<p className="jp">{p.name}</p>
+								<p className="en">{p.nameEn}</p>
+								<p className="price">{p.price}円（税込）</p>
+							</div>
 
 							<hr className="lineup-divider" />
 

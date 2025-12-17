@@ -8,7 +8,6 @@ export default function About() {
 		<>
 			<Header />
 			<section className="about-section">
-				{/* ===== Intro ===== */}
 				<div className="about-wrapper">
 					<h1 className="about-title">焼き菓子3＆1とは</h1>
 
@@ -20,6 +19,7 @@ export default function About() {
 								className="shop-image"
 							/>
 						</div>
+
 						<div className="about-shop">
 							<p>
 								愛知県豊川市のbenchさんにて月2回営業マルシェ出店です。無農薬レモンを使った瀬戸内レモンケーキをはじめ焼き菓子を焼いています。愛媛県出身の4人のママで育児や家事の合間にほっとひと息できるようなお菓子を作っています。
@@ -31,28 +31,30 @@ export default function About() {
 
 			{/* ===== Story ===== */}
 			<section className="story-section">
-				<div className="story-card">
-					<div className="story-text">
-						<h3>店のストーリー</h3>
-						<p>
-							子どもたちが小さい頃、毎日公園へ連れて行く孤独と疲れの中で、帰りに見つけたパン屋やお菓子を、2人がお昼寝したときにそっと食べる時間が私の小さな幸せでした。
-						</p>
-						<p>
-							その経験に何度も救われたからこそ、同じように日々がんばる誰かにも、家族とほっとできるお菓子を届けたい―その想いが、この店を始めた理由です。
-						</p>
-					</div>
+				<div className="story-cream-bg">
+					<div className="story-card">
+						<div className="story-text">
+							<h3>店のストーリー</h3>
+							<p>
+								子どもたちが小さい頃、毎日公園へ連れて行く孤独と疲れの中で、帰りに見つけたパン屋やお菓子を、2人がお昼寝したときにそっと食べる時間が私の小さな幸せでした。
+							</p>
+							<p>
+								その経験に何度も救われたからこそ、同じように日々がんばる誰かにも、家族とほっとできるお菓子を届けたい―その想いが、この店を始めた理由です。
+							</p>
+						</div>
 
-					<div className="story-images">
-						<img
-							src="/images/baking_cookie1.png"
-							className="story-img-left"
-							alt="Baking Cookie Photo"
-						/>
-						<img
-							src="/images/baking_cookie2.png"
-							className="story-img-right"
-							alt="Baking Cookie Photo"
-						/>
+						<div className="story-images">
+							<img
+								src="/images/baking_cookie1.png"
+								className="story-img-left"
+								alt="Baking Cookie Photo"
+							/>
+							<img
+								src="/images/baking_cookie2.png"
+								className="story-img-right"
+								alt="Baking Cookie Photo"
+							/>
+						</div>
 					</div>
 				</div>
 			</section>

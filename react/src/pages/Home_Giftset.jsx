@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 export default function Home_Giftset() {
 	return (
-		<section className="home-giftset" id="home-gift-set">
+		<section className="home-giftset scroll-section" id="home-gift-set">
 			<h2 className="home-giftset-title">ギフトセット</h2>
 
 			<div className="home-giftset-inner">
@@ -28,9 +29,18 @@ export default function Home_Giftset() {
 			</div>
 
 			{/* CTA */}
-			<a href="/gift" className="home-giftset-btn">
+			<Link
+				to="/giftset"
+				className="home-giftset-btn"
+				onClick={() => {
+					window.scrollTo({
+						top: 0,
+						behavior: "instant",
+					});
+				}}
+			>
 				<button>カートに入れる</button>
-			</a>
+			</Link>
 
 			{/* Decorations */}
 			<img

@@ -1,18 +1,22 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Curve_Body from "../components/Curve_Body";
+import Home_Materials from "./Home_Materials.jsx";
 import Home_Lineup from "./Home_Lineup.jsx";
 import Home_Giftset from "./Home_Giftset.jsx";
 import Home_Giftset_Schedule from "./Home_Giftset_Schedule.jsx";
 import Home_Ranking from "./Home_Ranking.jsx";
 import ScrollToTopButton from "../components/ScrollToTopButton.jsx";
+import useScrollReveal from "../hooks/useScrollReveal.js";
 
 export default function Home() {
+	useScrollReveal();
+
 	return (
 		<>
 			<Header />
 
-			<section className="home-hero">
+			<section className="home-hero scroll-section">
 				<div className="home-hero-inner">
 					{/* Circle photo */}
 					<div className="hero-photo">
@@ -96,56 +100,7 @@ export default function Home() {
 				<div className="inverse-body-curve"></div>
 			</section>
 
-			<section className="materials">
-				<div className="materials-inner">
-					<h2 className="materials-title">素材のこだわり</h2>
-
-					<div className="materials-grid">
-						<img
-							src="/images/egg.png"
-							alt="ランキングエッグ"
-							className="material-card"
-						/>
-						<img
-							src="/images/lemon.png"
-							alt="無農薬レモン"
-							className="material-card"
-						/>
-						<img
-							src="/images/flour.png"
-							alt="国産小麦粉"
-							className="material-card"
-						/>
-						<img
-							src="/images/butter.png"
-							alt="北海道バター"
-							className="material-card"
-						/>
-						<img
-							src="/images/sugar.png"
-							alt="きび砂糖"
-							className="material-card"
-						/>
-					</div>
-
-					<a href="#" className="materials-btn">
-						詳しく見る
-					</a>
-
-					<img
-						src="/images/material-hero-lemon.png"
-						className="material-hero-lemon"
-					/>
-					<img
-						src="/images/lemon_deco.png"
-						className="material-deco-lemon-1 float-lemon float-slow"
-					/>
-					<img
-						src="/images/lemon_deco.png"
-						className="material-deco-lemon-2 float-lemon float-delay-3"
-					/>
-				</div>
-			</section>
+			<Home_Materials />
 
 			<Home_Lineup />
 

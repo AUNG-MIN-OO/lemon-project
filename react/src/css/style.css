@@ -139,7 +139,7 @@ body {
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 1000;
+	z-index: 2000;
 	background: var(--brand-yellow);
 }
 
@@ -351,6 +351,7 @@ body {
 .home-hero {
 	background: var(--brand-yellow);
 	width: 100%;
+	overflow: hidden;
 }
 
 .home-hero-inner {
@@ -441,7 +442,7 @@ body {
 }
 
 .lemon-4 {
-	top: 856px;
+	top: 429px;
 	left: 320px;
 	rotate: 111deg;
 }
@@ -528,6 +529,7 @@ body {
 	}
 
 	.hero-gift img {
+		top: 220px;
 		width: 260px;
 	}
 
@@ -552,47 +554,42 @@ body {
 
 	.lemon-1 {
 		top: 250px;
-		left: -100px;
-	}
-
-	.lemon-2 {
-		top: 580px;
 		left: 0;
 	}
 
+	.lemon-2 {
+		top: 350px;
+		left: 0;
+		rotate: 40deg;
+	}
+
 	.lemon-3 {
-		top: 875px;
-		left: -50px;
-		rotate: 95deg;
+		top: 821px;
+		left: 30px;
 	}
 
 	.lemon-4 {
-		top: 780px;
-		left: 320px;
-		rotate: 111deg;
+		top: 488px;
+		left: 230px;
 	}
 
 	.lemon-5 {
-		top: 155px;
-		right: 480px;
-		rotate: 95deg;
+		top: 55px;
+		right: 115px;
 	}
 
 	.lemon-6 {
 		top: 195px;
-		right: -175px;
-		rotate: -155deg;
+		right: 16px;
 	}
 
 	.lemon-7 {
-		top: 390px;
-		right: 145px;
+		right: 46px;
 	}
 
 	.lemon-8 {
-		top: 830px;
-		right: 48px;
-		rotate: -182deg;
+		top: 490px;
+		right: 93px;
 	}
 
 	.hero-cookie {
@@ -600,18 +597,16 @@ body {
 	}
 
 	.cookie-1 {
-		top: 424px;
-		left: -166px;
+		top: 65px;
+		left: 30px;
 	}
 
 	.cookie-2 {
-		top: 285px;
-		left: 290px;
+		left: 190px;
 	}
 
 	.cookie-3 {
-		top: 360px;
-		right: -80px;
+		right: 90px;
 	}
 
 	.cookie-4 {
@@ -625,7 +620,7 @@ body {
 ================================================= */
 
 .materials {
-	background: #fffdf4;
+	background: var(--brand-soft-white);
 	padding: 120px 0 40px 0;
 	position: relative;
 	overflow: hidden;
@@ -725,65 +720,31 @@ body {
 
 @media (max-width: 768px) {
 	.materials {
-		padding: 40px 0 20px 0;
+		padding: 20px 0;
 	}
 
 	/* Vertical title */
 	.materials-title {
-		position: absolute;
-		left: -60px;
-		top: 50%;
-		transform: translateY(-50%);
-		writing-mode: vertical-rl;
-		font-family: "Zen Kurenaido", sans-serif;
-		font-weight: 700;
+		left: -10px;
+		top: 29%;
 		font-size: 26px;
-		color: #1f9725;
-		letter-spacing: 6px;
 	}
 
 	/* Grid */
 	.materials-grid {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 20px 10px;
-		justify-items: center;
-		grid-auto-flow: dense;
-	}
-
-	/* Bottom row centering */
-	.material-card:nth-child(4) {
-		grid-column: 1 / 3;
-		grid-row: 2;
-	}
-
-	.material-card:nth-child(5) {
-		grid-column: 2 / 4;
-		grid-row: 2;
+		padding-left: 40px;
+		gap: 40px 0;
 	}
 
 	/* PNG cards */
 	.material-card {
 		width: 90px;
-		height: auto;
-		display: block;
 	}
 
 	/* Button */
 	.materials-btn {
-		display: block;
-		width: 180px;
-		margin: 80px auto 0;
-		padding: 14px 0;
-		text-align: center;
-		border: 3px solid #ffbc00;
-		border-radius: 12px;
-		color: #1f9725;
-		font-family: "Zen Kurenaido", sans-serif;
-		font-weight: 700;
-		font-size: 16px;
-		text-decoration: none;
-		background: #fffdf4;
+		width: 140px;
+		padding: 5px 0;
 	}
 
 	.materials-btn:hover {
@@ -791,27 +752,22 @@ body {
 	}
 
 	.material-hero-lemon {
-		position: absolute;
-		width: 400px;
-		z-index: 1000;
-		bottom: 0;
-		right: -220px;
+		width: 175px;
+		bottom: 40px;
+		right: 0;
 	}
 
 	.material-deco-lemon-1 {
-		position: absolute;
-		width: 100px;
-		z-index: 1000;
-		bottom: 290px;
-		right: -25px;
-		rotate: -89deg;
+		width: 50px;
+		bottom: 205px;
+		right: 5px;
 	}
 
 	.material-deco-lemon-2 {
-		position: absolute;
-		width: 100px;
-		z-index: 1000;
-		bottom: 30px;
+		width: 50px;
+		bottom: 35px;
+		rotate: 15deg;
+		left: 95px;
 	}
 }
 
@@ -954,6 +910,97 @@ body {
 	transition: left 0.4s ease;
 }
 
+@media (max-width: 768px) {
+	.lineup-title {
+		font-size: 26px;
+		margin: 0;
+		font-weight: bold;
+	}
+
+	/* Track */
+	.lineup-track {
+		gap: 15px;
+		padding: 34px 20px;
+	}
+
+	/* Card */
+	.lineup-card {
+		width: 175px;
+		padding: 10px 15px;
+		border-radius: 10px;
+		box-shadow: 13px 13px 23px #bebebe, -13px -13px 23px #ffffff;
+	}
+
+	.lineup-card-img {
+		height: 65px;
+	}
+
+	.lineup-card img {
+		width: 60px;
+		margin-bottom: 6px;
+	}
+
+	.lineup-card-name-price .jp,
+	.en,
+	.price {
+		height: 35px;
+	}
+
+	.lineup-card .jp {
+		margin: 5px 0;
+		font-size: 14px;
+	}
+
+	.lineup-card .en {
+		margin: 5px 0;
+		font-size: 14px;
+	}
+
+	.lineup-card .price {
+		margin: 10px 0 10px;
+		font-size: 10px;
+	}
+
+	.lineup-divider {
+		margin: 5px auto;
+		width: 150px;
+	}
+
+	.lineup-card-info {
+		font-family: "Kosugi Maru", sans-serif;
+		height: 50px;
+	}
+
+	.lineup-card .description {
+		font-size: 10px;
+	}
+
+	.buy-btn {
+		padding: 4px 15px;
+		font-size: 10px;
+	}
+
+	/* ===============================
+    PAGINATION
+    =============================== */
+
+	/* Thin line */
+	.scroll-line {
+		width: 155px;
+	}
+
+	.scroll-thumb {
+		position: absolute;
+		top: -2px;
+		width: 30px;
+		height: 6px;
+		background: #666;
+		border-radius: 3px;
+		transform: translateX(-50%);
+		transition: left 0.4s ease;
+	}
+}
+
 /* =================================================
    HOME – GIFT SET
 ================================================= */
@@ -1081,14 +1128,88 @@ body {
 =============================== */
 
 @media (max-width: 768px) {
-	.home-giftset-inner {
-		grid-template-columns: 1fr;
-		text-align: center;
+	.home-giftset {
+		border-top-left-radius: 50px;
+		border-top-right-radius: 50px;
+		padding: 0;
 	}
 
-	.home-giftset-circle {
-		width: 320px;
-		height: 320px;
+	.home-giftset-title {
+		font-size: 26px;
+		margin-bottom: 40px;
+	}
+
+	/* INNER */
+	.home-giftset-inner {
+		gap: 30px;
+		align-items: center;
+		padding: 50px 30px;
+	}
+
+	/* LEFT PHOTO */
+	.home-giftset-photo {
+		border-radius: 28px;
+		overflow: hidden;
+	}
+
+	.home-giftset-photo img {
+		width: 100%;
+		display: block;
+	}
+
+	/* RIGHT CIRCLE */
+	.home-giftset-circle .home-giftset-box {
+		width: 235px;
+		position: absolute;
+		z-index: 1000;
+		top: 80px;
+		left: 174px;
+	}
+
+	.home-giftset-circle .home-giftset-box-inside {
+		width: 200px;
+		position: absolute;
+		z-index: 1001;
+		top: 380px;
+		left: 1031px;
+	}
+
+	.home-giftset-box {
+		width: 220px;
+		margin-top: 40px;
+	}
+
+	/* BUTTON */
+	.home-giftset-btn {
+		margin: 20px auto 0;
+		padding: 10px 0;
+	}
+
+	.home-giftset-btn button {
+		font-size: 14px;
+		width: 150px;
+		height: 50px;
+	}
+
+	.home-giftset-btn button:hover {
+		background: var(--brand-yellow);
+		color: var(--brand-soft-white);
+	}
+
+	/* DECORATIONS */
+	.home-giftset-lemon-top,
+	.home-giftset-lemon-bottom {
+		width: 125px;
+	}
+
+	.home-giftset-lemon1 {
+		width: 50px;
+	}
+
+	.home-giftset-lemon2 {
+		width: 50px;
+		bottom: 48px;
+		left: 68px;
 	}
 }
 
@@ -1210,6 +1331,48 @@ body {
 	margin-top: 6px;
 }
 
+@media (max-width: 768px) {
+	.home-giftset-schedule {
+		padding: 20px;
+	}
+
+	.schedule-title {
+		font-size: 26px;
+		margin-bottom: 40px;
+	}
+
+	/* TIMELINE */
+	.schedule-timeline {
+		min-width: 600px;
+		padding-left: 0;
+	}
+
+	/* YEAR */
+	.schedule-year {
+		left: 0;
+		font-size: 14px;
+	}
+
+	/* DASHED LINE */
+	.schedule-line {
+		left: 40px;
+	}
+
+	/* PARCEL (ON LINE) */
+	.schedule-parcel {
+		width: 80px;
+		position: relative;
+		z-index: 2;
+	}
+
+	/* DAY (BOTTOM) */
+	.schedule-day {
+		font-family: "Kosugi Maru", sans-serif;
+		font-size: 13px;
+		margin-top: 6px;
+	}
+}
+
 /* ===============================
    HOME RANKING
 ================================ */
@@ -1266,57 +1429,49 @@ body {
 	z-index: 3;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.home-ranking {
-		padding: 0 20px 120px;
-		position: relative;
+		padding: 20px;
+		overflow: hidden;
 	}
 
 	.ranking-title {
-		text-align: center;
-		font-family: "Zen Kurenaido", sans-serif;
-		font-weight: bolder;
-		font-size: 36px;
-		color: #1f9725;
-		margin-bottom: 300px;
+		font-size: 26px;
 	}
 
-	/* CARD WRAPPER */
+	/* WRAPPER */
 	.ranking-cards {
-		max-width: 1100px;
-		margin: 0 auto;
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-start;
 		flex-direction: column;
-		gap: 40px;
+		align-items: stretch;
+		gap: 80px;
 	}
 
 	/* CARD BASE */
 	.ranking-card {
-		width: 320px;
-		text-align: center;
-		position: relative;
+		width: 100%;
+		max-width: 320px;
 	}
 
-	/* STAGGERED HEIGHTS */
+	/* ALIGNMENT PATTERN */
 	.rank-1 {
 		margin-top: 0;
-	}
-	.rank-2 {
-		margin-top: 60px;
-	}
-	.rank-3 {
-		margin-top: 120px;
+		margin-right: auto; /* LEFT */
 	}
 
-	/* CROWN */
+	.rank-2 {
+		margin-top: 0;
+		margin-left: 200px;
+	}
+
+	.rank-3 {
+		margin-top: 85px;
+		margin-right: auto; /* LEFT */
+	}
+
 	.rank-crown {
-		position: absolute;
-		top: -260px;
-		left: -36px;
-		width: 320px;
-		z-index: 3;
+		top: -250px;
+		left: 0;
+		width: 180px;
 	}
 }
 
@@ -1482,9 +1637,13 @@ body {
 ================================================= */
 
 .about-section {
-	height: 80vh;
 	background: var(--brand-yellow);
 	padding: 80px 16px 120px;
+}
+
+.about-wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 .about-title {
@@ -1494,56 +1653,79 @@ body {
 	text-align: center;
 	color: var(--brand-dark-green);
 	font-size: 40px;
-	margin-bottom: 56px;
+	margin-bottom: 90px;
+}
+
+.about-card {
+	position: relative;
+	width: 82%;
+	margin: 0 auto;
+	background: var(--brand-soft-white);
+	border-radius: 32px;
+	padding: 80px 48px 48px 360px;
+	box-sizing: border-box;
 }
 
 /* ===== Image ===== */
 .about-img {
 	position: absolute;
-	top: 254px;
-	left: 284px;
-	z-index: 1;
-	padding: 50px;
+	top: -40px;
+	left: 40px;
 }
 
 .shop-image {
-	width: 300px;
+	width: 280px;
 	border-radius: 24px;
 	object-fit: cover;
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
 }
 
 /* ===== Text Card ===== */
 .about-shop {
-	top: 290px;
-	right: 300px;
-	position: absolute;
-	background: var(--brand-soft-white);
-	border-radius: 28px;
-	padding: 50px;
-	max-width: 60%;
-	margin-left: -80px;
+	position: static;
+	padding: 0;
+	max-width: 100%;
 }
 
 .about-shop p {
-	width: 500px;
-	text-align: left;
 	font-family: "Kosugi Maru", sans-serif;
-	font-weight: 500px;
-	font-size: 15px;
-	line-height: 1.9;
+	font-weight: 700px;
 	color: var(--text-gray);
+	line-height: 3;
+	font-size: 15px;
+	margin-bottom: 20px;
 }
 
 /* Story Card */
-.story-card {
-	margin: 50px auto 80px;
-	padding: 30px 40px;
-	border: 4px solid #7cb342;
-	border-radius: 30px;
+.story-section {
+	background: var(--brand-yellow);
+	padding-top: 160px;
+	padding-bottom: 0;
+	position: relative;
+	z-index: 1;
+}
+
+.story-cream-bg {
+	background: #fffdf4;
+	border-radius: 90px 90px 0 0;
+	margin-top: -173px;
+	padding: 180px 40px 160px;
+	overflow: hidden;
 	position: relative;
 	z-index: 2;
-	width: 50%;
-	height: auto;
+}
+
+.story-card {
+	position: relative;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 64px 80px;
+	border: 4px solid #7cb342;
+	border-radius: 36px;
+	background-color: #ffffff;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
 }
 
 .story-text {
@@ -1595,77 +1777,75 @@ body {
 }
 
 /* Ingredients Card */
-.About-ingredient-card {
-	max-width: 900px;
-	margin: 0 auto;
-	padding: 50px 40px;
-	background: white;
-	border: 4px solid #7cb342;
-	border-radius: 30px;
+.about-ingredient-section {
+	padding: 80px 20px;
 	display: flex;
+	justify-content: center;
+}
+
+/* CARD */
+.about-ingredient-card {
+	max-width: 1000px;
+	width: 100%;
+	background: #ffffff;
+	border: 3px solid #1f9725;
+	border-radius: 24px;
+	padding: 40px 48px;
+	display: flex;
+	gap: 48px;
 	align-items: center;
-	gap: 40px;
+	box-sizing: border-box;
+}
+
+/* LEFT IMAGES */
+.about-ingredient-images {
 	position: relative;
-	z-index: 2;
-}
-
-.About-ingredient-card::before {
-	content: "";
-	position: absolute;
-	left: -40px;
-	bottom: 20%;
-	width: 100px;
-	height: 100px;
-	background: radial-gradient(circle, #ffb347 0%, #ff8c00 100%);
-	border-radius: 50%;
-	opacity: 0.3;
-	z-index: -1;
-}
-
-.About-ingredient-card::after {
-	content: "";
-	position: absolute;
-	bottom: -30px;
-	right: 50px;
-	width: 0;
-	height: 0;
-	border-left: 30px solid transparent;
-	border-right: 30px solid transparent;
-	border-top: 50px solid #7cb342;
-	opacity: 0.8;
-}
-
-.About-ingredient-images {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
+	width: 200px;
+	height: 260px; /* container height */
 	flex-shrink: 0;
 }
 
-.About-ingredient-images img {
-	width: 220px;
-	height: 180px;
+.about-ingredient-images img {
+	position: absolute;
+	width: 170px;
+	border-radius: 12px;
 	object-fit: cover;
-	border-radius: 20px;
-	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-.About-ingredient-text {
+.about-ingredient-images img:nth-child(1) {
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+/* BOTTOM IMAGE (EGG) */
+.about-ingredient-images img:nth-child(2) {
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+}
+
+/* RIGHT TEXT */
+.about-ingredient-text {
 	flex: 1;
 }
 
-.About-ingredient-text h3 {
-	color: #2d5016;
-	font-size: 28px;
-	font-weight: bold;
-	margin-bottom: 25px;
-	text-align: center;
+.about-ingredient-text h3 {
+	font-size: 40px;
+	color: var(--brand-dark-green);
+	margin-bottom: 20px;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: bolder;
 }
 
-.About-ingredient-text p {
-	color: #333;
-	line-height: 1.9;
+.about-ingredient-text p {
+	font-family: "Kosugi Maru", sans-serif;
+	font-weight: 700px;
+	color: var(--text-gray);
+	line-height: 3;
 	font-size: 15px;
+	margin-bottom: 20px;
 }
 
 /* ======================
@@ -2331,10 +2511,48 @@ body {
 ================================ */
 
 .giftset-box img {
-	width: 180px;
+	position: absolute;
+	top: 156%;
+	right: 322px;
+	width: 268px;
 	border-radius: 50%;
 	display: block;
 	margin: 0 auto;
+}
+
+.gift-back {
+	padding-top: 30px;
+}
+
+.gift-back-product {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+
+	padding: 10px 20px;
+	border: 3px solid var(--brand-yellow); /* 黄色の太枠 */
+	border-radius: 12px;
+	background: #ffffff;
+
+	font-family: "Zen Kurenaido", sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	color: var(--brand-dark-green); /* 緑 */
+	text-decoration: none;
+	cursor: pointer;
+	transition: background 0.2s ease;
+}
+
+.gift-back-product:hover {
+	background: #fff8d4;
+}
+
+.gift-back-icon {
+	color: var(--brand-dark-green);
+	font-size: 10px;
+	border: 1px solid var(--brand-dark-green);
+	border-radius: 50%;
+	padding: 3px;
 }
 
 /* ===============================
@@ -2875,10 +3093,12 @@ body {
 }
 
 .access-address {
+	font-family: "Kosugi Maru", sans-serif;
+	font-weight: 500;
 	margin-top: 18px;
 	line-height: 2;
-	font-size: 16px;
-	color: #555;
+	font-size: 15px;
+	color: var(--text-gray);
 }
 
 /* Buttons */
@@ -2896,15 +3116,34 @@ body {
 }
 
 .walk-text {
+	font-family: "Kosugi Maru", sans-serif;
+	font-weight: 500;
 	margin: 10px 0 20px;
-	font-size: 18px;
-	color: #444;
+	font-size: 15px;
+	color: var(--text-gray);
 }
 
 .note {
+	font-family: "Kosugi Maru", sans-serif;
+	font-weight: 500;
 	margin-top: 20px;
-	font-size: 13px;
-	color: #777;
+	line-height: 2;
+	font-size: 15px;
+	color: var(--text-gray);
+}
+
+.access-sns-icons {
+	display: flex;
+	gap: 14px;
+}
+
+.access-sns-icons img {
+	width: 24px;
+	cursor: pointer;
+}
+
+.access-sns-icons img:hover {
+	opacity: 0.8;
 }
 
 /* RIGHT SIDE (MAP) */
@@ -2927,11 +3166,15 @@ body {
 	object-fit: cover;
 }
 
-.map-link {
+.shop-address,
+.shop-address:hover,
+.shop-address:visited {
+	margin-top: 10px;
+	text-decoration: none;
+	color: var(--text-gray);
 	font-size: 18px;
 	font-family: "Zen Kurenaido", sans-serif;
-	font-weight: 700;
-	margin-top: 10px;
+	font-weight: bolder;
 }
 
 /*=============================== End Contact CSS ==================================*/
@@ -3213,7 +3456,7 @@ body {
 ----------------------------------- */
 .inverse-body-curve {
 	width: 100%;
-	height: 110px;
+	height: 200px;
 	background: var(--brand-soft-white);
 	border-top-left-radius: 90px;
 	border-top-right-radius: 90px;
@@ -3263,6 +3506,18 @@ body {
 .scroll-top-btn:hover {
 	background: var(--brand-green);
 	color: #ffffff;
+}
+
+@media (max-width: 767px) {
+	.scroll-top-btn {
+		width: 45px;
+		height: 45px;
+		right: 5px;
+	}
+	.scroll-top-btn img {
+		width: 40px;
+		height: 40px;
+	}
 }
 
 /* ==================================================
@@ -3452,4 +3707,40 @@ body {
 	100% {
 		transform: translateY(0) rotate(0deg);
 	}
+}
+
+/* ================================
+   Scroll Animation Base
+================================ */
+
+.scroll-section {
+	opacity: 0;
+	transform: translateY(40px);
+	transition: opacity 2s ease, transform 2s ease;
+}
+
+.scroll-section.is-visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.home-hero.scroll-section {
+	transform: translateY(80px) scale(0.97);
+}
+
+.home-hero.scroll-section.is-visible {
+	transform: translateY(0) scale(1);
+}
+
+.lemon,
+.hero-cookie {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.scroll-section.is-visible .lemon,
+.scroll-section.is-visible .hero-cookie {
+	opacity: 1;
+	transform: translateY(0);
 }
