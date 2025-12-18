@@ -112,7 +112,7 @@ export default function ProductDetail() {
 					</section>
 
 					{/* RETURN */}
-					<Link to="/" className="btn-back-product">
+					<Link to="/#lineup" className="btn-back-product">
 						<span className="back-icon">←</span>
 						商品一覧に戻る
 					</Link>

@@ -88,7 +88,7 @@ export default function Gift_Detail() {
 				</div>
 
 				<div className="gift-back">
-					<Link to="/" className="gift-back-product">
+					<Link to="/#lineup" className="gift-back-product">
 						<span className="gift-back-icon">←</span>
 						商品一覧に戻る
 					</Link>

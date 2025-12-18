@@ -92,7 +92,7 @@ export default function Shopping_Cart() {
 
 						{/* BUTTONS */}
 						<div className="cart-buttons">
-							<Link to="/" className="btn-yellow">
+							<Link to="/#lineup" className="btn-yellow">
 								商品一覧に戻る
 							</Link>
 							<Link to="/checkout" className="btn-yellow">
