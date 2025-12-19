@@ -6,7 +6,7 @@ export default function Home_Ranking() {
 			<div className="ranking-cards">
 				<div className="ranking-card rank-1">
 					<img
-						src="/images/rank1.png"
+						src="/images/rank-1.png"
 						alt="1st crown"
 						className="rank-crown"
 					/>
@@ -14,7 +14,7 @@ export default function Home_Ranking() {
 
 				<div className="ranking-card rank-2">
 					<img
-						src="/images/rank2.png"
+						src="/images/rank-2.png"
 						alt="2nd crown"
 						className="rank-crown"
 					/>
@@ -22,7 +22,7 @@ export default function Home_Ranking() {
 
 				<div className="ranking-card rank-3">
 					<img
-						src="/images/rank3.png"
+						src="/images/rank-3.png"
 						alt="3rd crown"
 						className="rank-crown"
 					/>
