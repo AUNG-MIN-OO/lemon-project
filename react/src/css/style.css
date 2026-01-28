@@ -368,7 +368,7 @@ body {
 	position: absolute;
 	top: 107px;
 	left: -106px;
-	width: 450px;
+	width: 502px;
 	height: 345px;
 	border-radius: 50%;
 }
@@ -810,7 +810,9 @@ body {
 	padding: 30px 20px;
 	text-align: center;
 	border-radius: 50px;
-	box-shadow: 23px 23px 46px #bebebe, -23px -23px 46px #ffffff;
+	box-shadow:
+		23px 23px 46px #bebebe,
+		-23px -23px 46px #ffffff;
 }
 
 .lineup-card-img {
@@ -928,7 +930,9 @@ body {
 		width: 175px;
 		padding: 10px 15px;
 		border-radius: 10px;
-		box-shadow: 13px 13px 23px #bebebe, -13px -13px 23px #ffffff;
+		box-shadow:
+			13px 13px 23px #bebebe,
+			-13px -13px 23px #ffffff;
 	}
 
 	.lineup-card-img {
@@ -2083,7 +2087,9 @@ body {
 	.story-images img {
 		width: 240px;
 		height: 240px;
-		transition: transform 0.4s ease, box-shadow 0.4s ease;
+		transition:
+			transform 0.4s ease,
+			box-shadow 0.4s ease;
 	}
 
 	.story-images img:hover {
@@ -2148,7 +2154,9 @@ body {
 
 	/* Hover effects for desktop */
 	.shop-image {
-		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		transition:
+			transform 0.3s ease,
+			box-shadow 0.3s ease;
 	}
 
 	.shop-image:hover {
@@ -2157,7 +2165,9 @@ body {
 	}
 
 	.story-images img {
-		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		transition:
+			transform 0.3s ease,
+			box-shadow 0.3s ease;
 	}
 
 	.story-images img:hover {
@@ -2165,7 +2175,9 @@ body {
 	}
 
 	.About-ingredient-images img {
-		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		transition:
+			transform 0.3s ease,
+			box-shadow 0.3s ease;
 	}
 
 	.About-ingredient-images img:hover {
@@ -2183,7 +2195,9 @@ body {
 
 	.story-card,
 	.About-ingredient-card {
-		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		transition:
+			transform 0.3s ease,
+			box-shadow 0.3s ease;
 	}
 
 	.story-card:hover,
@@ -3152,8 +3166,8 @@ body {
 }
 
 .map-circle {
-	width: 260px;
-	height: 260px;
+	width: 400px;
+	height: 400px;
 	border: 7px solid #ffbc00;
 	border-radius: 50%;
 	overflow: hidden;
@@ -3716,7 +3730,9 @@ body {
 .scroll-section {
 	opacity: 0;
 	transform: translateY(40px);
-	transition: opacity 2s ease, transform 2s ease;
+	transition:
+		opacity 2s ease,
+		transform 2s ease;
 }
 
 .scroll-section.is-visible {
@@ -3736,7 +3752,9 @@ body {
 .hero-cookie {
 	opacity: 0;
 	transform: translateY(20px);
-	transition: opacity 1.2s ease, transform 1.2s ease;
+	transition:
+		opacity 1.2s ease,
+		transform 1.2s ease;
 }
 
 .scroll-section.is-visible .lemon,

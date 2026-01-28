@@ -14,7 +14,7 @@ export default function Checkout() {
 
 	const totalAmount = cart.reduce(
 		(sum, item) => sum + item.price * item.qty,
-		0
+		0,
 	);
 
 	const handleSubmit = (e) => {
@@ -48,17 +48,13 @@ export default function Checkout() {
 					<div className="outer-box">
 						<form className="order-form" onSubmit={handleSubmit}>
 							{/* CUSTOMER INFO */}
-							<input type="text" placeholder="姓" required />
-							<input type="text" placeholder="名" required />
+							<input type="text" placeholder="姓" />
+							<input type="text" placeholder="名" />
 							<input type="text" placeholder="フリガナ" />
-							<input
-								type="text"
-								placeholder="郵便番号"
-								required
-							/>
+							<input type="text" placeholder="郵便番号" />
 
 							<div className="select-wrapper">
-								<select required>
+								<select>
 									<option value="">都道府県</option>
 									<option>東京都</option>
 									<option>神奈川県</option>
@@ -66,18 +62,10 @@ export default function Checkout() {
 								</select>
 							</div>
 
-							<input type="text" placeholder="住所" required />
+							<input type="text" placeholder="住所" />
 							<input type="text" placeholder="建物名、部屋番号" />
-							<input
-								type="text"
-								placeholder="電話番号"
-								required
-							/>
-							<input
-								type="email"
-								placeholder="メールアドレス"
-								required
-							/>
+							<input type="text" placeholder="電話番号" />
+							<input type="email" placeholder="メールアドレス" />
 
 							<label className="checkbox">
 								<input

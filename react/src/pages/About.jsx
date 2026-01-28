@@ -9,7 +9,7 @@ export default function About() {
 			<Header />
 			<section className="about-section">
 				<div className="about-wrapper">
-					<h1 className="about-title">焼き菓子3＆1とは</h1>
+					<h1 className="about-title">焼菓子3＆1とは</h1>
 
 					<div className="about-card">
 						<div className="about-img">

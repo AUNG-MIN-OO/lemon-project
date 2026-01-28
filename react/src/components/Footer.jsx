@@ -11,7 +11,7 @@ export default function Footer() {
 						alt="焼き菓子3&1"
 						className="footer-logo"
 					/>
-					<p className="footer-brand">焼き菓子3＆1</p>
+					<p className="footer-brand">焼菓子3＆1</p>
 				</div>
 
 				{/* CENTER */}
@@ -60,9 +60,7 @@ export default function Footer() {
 			</div>
 
 			<div className="footer-line"></div>
-			<p className="footer-copy">
-				©2025 焼き菓子3＆1. All Right Reserved.
-			</p>
+			<p className="footer-copy">©2025 焼菓子3＆1. All Right Reserved.</p>
 		</footer>
 	);
 }
